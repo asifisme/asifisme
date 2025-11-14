@@ -1,7 +1,5 @@
 'use client';
-import React, { useRef } from "react";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+import React from "react";
 import Header from "./components/Header";
 import Summary from "./components/Summary";
 import Experience, { ExperienceItemData } from "./components/Experience";
