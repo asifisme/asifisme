@@ -150,8 +150,8 @@ export default function Home() {
   ];
 
   return (
-    <main className="bg-gray-300 min-h-screen py-10">
-      <div className="mx-auto w-[900px] bg-white shadow-lg p-8">
+    <main className="bg-[#0f172a] min-h-screen py-10">
+      <div className="mx-auto w-[900px] bg-white rounded-lg shadow-lg p-8">
         <Header {...headerData} />
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Left column */}
