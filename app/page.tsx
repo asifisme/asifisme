@@ -14,7 +14,7 @@ export default function Home() {
 
   const headerData = {
       name: "Asif Faisal",
-      title: "Software Developer | Python Specialist",
+      title: "Full-Stack & Financial Solutions Developer",
       email: "f.asif.official@gmail.com",
       linkedin: "https://www.linkedin.com/in/asifisme",
       leetcode: "https://www.leetcode.com/asifisme",
@@ -24,7 +24,7 @@ export default function Home() {
 
   // Summary data
   const summaryText =
-    "Django developer with proven experience in building complex, full-featured e-commerce backend systems. Proficient in designing and implementing robust APIs, and creating advanced features for product and inventory management. Skilled in optimizing database performance and ensuring scalability for high-traffic applications.";
+    "Passionate Full-Stack & Financial Solutions Developer skilled in Django, DRF, FastAPI, React, Next.js, PostgreSQL, and MySQL. I specialize in building secure, scalable, and data-driven fintech applications with strong backend architectures and modern frontend interfaces.";
 
   const experiences: ExperienceItemData[] = [
       {
