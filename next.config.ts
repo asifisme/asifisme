@@ -1,13 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Set the base path for GitHub Pages (repository name)
-  basePath: '/resume',
-  
-  // Asset prefix for static files
-  assetPrefix: '/resume/',
-  
-  // Enable static export
+  // Enable static export for GitHub Pages
   output: 'export',
   
   // Disable image optimization for static export
