@@ -1,8 +1,8 @@
 # 📄 Asif Faisal - Professional Resume
 
-## 🌐 Live Website
+## 🌐 Live Resume
 
-**Visit:** [https://asifisme.github.io/](https://asifisme.github.io/)
+**Visit:** [https://asifisme.github.io/asifisme/](https://asifisme.github.io/asifisme/)
 
 ---
 
@@ -10,6 +10,7 @@
 
 I’m **Asif Faisal**, a passionate **Full-Stack & Financial Solutions Developer** skilled in:
 
+- 
 -   **Backend:** Django, DRF, FastAPI
 -   **Frontend:** React, Next.js
 -   **Databases:** PostgreSQL, MySQL
@@ -24,7 +25,6 @@ Combining technical precision with business understanding, I deliver end-to-end 
 
 ## 📚 Education 
 
-This project is open source and available for personal use.
 
 ---
 
