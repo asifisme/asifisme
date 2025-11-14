@@ -1,7 +1,5 @@
 # 📄 Asif Faisal - Professional Resume
 
-A modern, responsive resume website built with Next.js 16, React 19, and Tailwind CSS 4. Deployed automatically to GitHub Pages.
-
 ## 🌐 Live Website
 
 **Visit:** [https://asifisme.github.io/](https://asifisme.github.io/)
