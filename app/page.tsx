@@ -150,25 +150,27 @@ export default function Home() {
   ];
 
   return (
-    <main className="bg-[#0f172a] min-h-screen py-10">
-      <div className="mx-auto w-[900px] bg-white rounded-lg shadow-lg p-8">
-        <Header {...headerData} />
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Left column */}
-          <section className="md:col-span-2 space-y-8">
-            <Summary text={summaryText} />
-            <Experience experiences={experiences} />
-            <Education education={education} />
-            <Languages languages={languages} />
-          </section>
+    <main className="bg-[#0f172a] min-h-screen py-4 sm:py-6 md:py-10">
+      <div className="mx-auto max-w-[900px] w-full px-4 sm:px-6 md:px-8">
+        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
+          <Header {...headerData} />
+          <div className="mt-4 sm:mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+            {/* Left column */}
+            <section className="md:col-span-2 space-y-6 sm:space-y-8">
+              <Summary text={summaryText} />
+              <Experience experiences={experiences} />
+              <Education education={education} />
+              <Languages languages={languages} />
+            </section>
 
-          {/* Right column (sidebar) */}
-          <aside className="md:col-span-1 space-y-8">
-            <Strengths strengths={strengths} />
-            <Skills skills={skills} />
-            <Certification certifications={certifications} />
-            <Passions passions={passions} />
-          </aside>
+            {/* Right column (sidebar) */}
+            <aside className="md:col-span-1 space-y-6 sm:space-y-8">
+              <Strengths strengths={strengths} />
+              <Skills skills={skills} />
+              <Certification certifications={certifications} />
+              <Passions passions={passions} />
+            </aside>
+          </div>
         </div>
       </div>
     </main>

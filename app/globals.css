@@ -45,23 +45,23 @@
 
 /* Resume component styles */
 .section-title {
-  @apply text-xs tracking-widest uppercase font-bold text-neutral-700 border-b pb-1;
+  @apply text-[10px] sm:text-xs tracking-widest uppercase font-bold text-neutral-700 border-b pb-1;
 }
 
 .job-title {
-  @apply font-semibold;
+  @apply font-semibold text-sm sm:text-base;
 }
 
 .job-meta {
-  @apply text-xs text-neutral-500;
+  @apply text-[10px] sm:text-xs text-neutral-500;
 }
 
 .bullet-list {
-  @apply mt-2 list-disc pl-5 text-[13px] text-neutral-800 space-y-1;
+  @apply mt-2 list-disc pl-4 sm:pl-5 text-xs sm:text-[13px] text-neutral-800 space-y-1;
 }
 
 .chip {
-  @apply inline-block rounded-full border border-neutral-200 px-3 py-1;
+  @apply inline-block rounded-full border border-neutral-200 px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-[13px];
 }
 
 /* Print styles */

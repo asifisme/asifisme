@@ -16,15 +16,15 @@ interface ExperienceItemProps {
 function ExperienceItem({ item }: ExperienceItemProps) {
   return (
     <article>
-      <div className="flex items-baseline justify-between">
-        <h3 className="job-title">
+      <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-2">
+        <h3 className="job-title text-sm sm:text-base">
           {item.title} — {item.company}
         </h3>
-        <span className="job-meta">
+        <span className="job-meta whitespace-nowrap">
           {item.period} · {item.location}
         </span>
       </div>
-      <p className="mt-1 text-[13px] text-neutral-700">{item.description}</p>
+      <p className="mt-1 text-xs sm:text-[13px] text-neutral-700">{item.description}</p>
       <ul className="bullet-list">
         {item.achievements.map((achievement, index) => (
           <li key={index}>{achievement}</li>

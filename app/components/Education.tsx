@@ -18,13 +18,13 @@ export default function Education({ education }: EducationProps) {
       <div className="mt-4 space-y-4">
         {education.map((item, index) => (
           <div key={index}>
-            <div className="flex items-baseline justify-between">
-              <p className="font-semibold">{item.degree}</p>
-              <span className="job-meta">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-2">
+              <p className="font-semibold text-sm sm:text-base">{item.degree}</p>
+              <span className="job-meta whitespace-nowrap">
                 {item.period} · {item.location}
               </span>
             </div>
-            <p className="text-sm text-neutral-700">{item.institution}</p>
+            <p className="text-xs sm:text-sm text-neutral-700">{item.institution}</p>
           </div>
         ))}
       </div>
