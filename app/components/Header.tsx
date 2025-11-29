@@ -1,8 +1,7 @@
 import React from "react";
-// Photo removed per request
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-// import { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 import { Code, Mail } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -16,10 +15,10 @@ interface HeaderProps {
   linkedin: string;
   leetcode: string;
   github: string;
-  // avatarSrc removed
+  avatarSrc: string | StaticImageData;
 }
 
-export default function Header({name, title, email, linkedin, leetcode, github}: HeaderProps) {
+export default function Header({name, title, email, linkedin, leetcode, github, avatarSrc}: HeaderProps) {
     const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
       const subject = encodeURIComponent("Interested in Working Together");
@@ -84,7 +83,15 @@ export default function Header({name, title, email, linkedin, leetcode, github}:
           </Link>
         </div>
       </div>
-      {/* Photo removed intentionally */}
+      <div className="shrink-0">
+        <Image
+          src={avatarSrc}
+          alt={`${name} headshot`}
+          width={80}
+          height={80}
+          className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover ring-2 ring-neutral-200"
+        />
+      </div>
     </header>
   );
 }
