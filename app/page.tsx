@@ -11,6 +11,8 @@ import Certification from "./components/Certification";
 import Passions from "./components/Passions";
 
 export default function Home() {
+  // Ensure assets work on GitHub Pages when the site is served under a basePath (e.g., /repo-name)
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   const headerData = {
       name: "Asif Faisal",
@@ -19,7 +21,8 @@ export default function Home() {
       linkedin: "https://www.linkedin.com/in/asifisme",
       leetcode: "https://www.leetcode.com/asifisme",
       github: "https://www.github.com/asifisme",
-      avatarSrc: "/image.png",
+    // Prefix with basePath so it resolves correctly on GitHub Pages
+    avatarSrc: `${basePath}/image.png`,
   };
 
   // Summary data
