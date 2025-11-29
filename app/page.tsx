@@ -1,7 +1,8 @@
 'use client';
 import React from "react";
 import Header from "./components/Header";
-import avatarPng from "./components/image.png";
+// Avatar image removed per request
+// import avatarPng from "./components/image.png";
 import Summary from "./components/Summary";
 import Experience, { ExperienceItemData } from "./components/Experience";
 import Education, { EducationItemData } from "./components/Education";
@@ -21,8 +22,7 @@ export default function Home() {
       linkedin: "https://www.linkedin.com/in/asifisme",
       leetcode: "https://www.leetcode.com/asifisme",
       github: "https://www.github.com/asifisme",
-    // Use static import so Next.js handles the asset path both locally and on GitHub Pages
-    avatarSrc: avatarPng,
+  // Photo removed
   };
 
   // Summary data
