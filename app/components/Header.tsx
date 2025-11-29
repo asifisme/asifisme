@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { StaticImageData } from 'next/image';
 import { Code, Mail } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -14,7 +15,7 @@ interface HeaderProps {
   linkedin: string;
   leetcode: string;
   github: string;
-  avatarSrc: string;
+  avatarSrc: string | StaticImageData;
 }
 
 export default function Header({name, title, email, linkedin, leetcode, github, avatarSrc}: HeaderProps) {
