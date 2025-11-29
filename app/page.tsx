@@ -31,7 +31,7 @@ export default function Home() {
           title: "Full Stack Software Developer",
           company: "OrbitX",
           period: "Jun 2025 – Present",
-          location: "London, UK",
+          location: "London, UK (Remote)",
           description: "Led full-stack development on scalable, high-impact projects using Django, Next.js, and microservices architecture.",
           achievements: [
               "Architected microservices ecosystem with Django REST Framework, enhancing scalability and reducing deployment time by 40%.",
@@ -127,6 +127,7 @@ export default function Home() {
   const certifications = [
     {
       title: "Full Stack Web Development with Python, Django & React",
+      docs_link: "https://ostad.app/share/certificate/c29360-asif-faisal", 
       description:
         "Course provided by Ostad.",
     },

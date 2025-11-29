@@ -1,8 +1,11 @@
 import React from "react";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 interface CertificationItem {
   title: string;
   description: string;
+  docs_link?: string;
 }
 
 interface CertificationProps {
@@ -16,8 +19,27 @@ export default function Certification({ certifications }: CertificationProps) {
       <ul className="mt-3 space-y-3 text-sm">
         {certifications.map((cert, index) => (
           <li key={index}>
-            <p className="font-medium">{cert.title}</p>
-            <p className="text-neutral-700">{cert.description}</p>
+            {cert.docs_link ? (
+              <Link
+                href={cert.docs_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+                aria-label={`Open certificate for ${cert.title}`}
+                title={`Open certificate for ${cert.title}`}
+              >
+                <p className="font-medium inline-flex items-center gap-2">
+                  {cert.title}
+                  <ExternalLink className="w-4 h-4 text-neutral-500" />
+                </p>
+                <p className="text-neutral-700">{cert.description}</p>
+              </Link>
+            ) : (
+              <div>
+                <p className="font-medium">{cert.title}</p>
+                <p className="text-neutral-700">{cert.description}</p>
+              </div>
+            )}
           </li>
         ))}
       </ul>

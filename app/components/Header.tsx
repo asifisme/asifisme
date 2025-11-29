@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image"; 
-import Link from "next/link"; 
+import Image from "next/image";
+import Link from "next/link";
+import { Linkedin, Github, Code, Mail } from "lucide-react";
 
 interface HeaderProps {
   name: string;
@@ -27,16 +28,53 @@ export default function Header({
         <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">{name}</h1>
         <p className="mt-1 text-sm sm:text-base text-sky-700 font-medium">{title}</p>
         <div className="mt-2 sm:mt-3 flex flex-wrap justify-center sm:justify-start gap-x-3 sm:gap-x-5 gap-y-1 text-xs sm:text-sm text-neutral-600">
-          <span className="break-all">{email}</span>
-          <Link href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-sky-700">
-            LinkedIn
+          <Link
+            href={`mailto:${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-sky-700"
+            aria-label={`Send email to ${email}`}
+            title={`Email: ${email}`}
+          >
+            <Mail className="w-4 h-4" />
+            <span className="break-all">{email}</span>
           </Link>
-           <Link href={leetcode} target="_blank" rel="noopener noreferrer" className="hover:text-sky-700">
-            LeetCode
+
+          <Link
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-sky-700"
+            aria-label="LinkedIn profile"
+            title="LinkedIn"
+          >
+            <Linkedin className="w-4 h-4" />
+            <span className="hidden sm:inline">LinkedIn</span>
           </Link>
-          <Link href={github} target="_blank" rel="noopener noreferrer" className="hover:text-sky-700">
-            GitHub
-          </Link>         
+
+          <Link
+            href={leetcode}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-sky-700"
+            aria-label="LeetCode profile"
+            title="LeetCode"
+          >
+            <Code className="w-4 h-4" />
+            <span className="hidden sm:inline">LeetCode</span>
+          </Link>
+
+          <Link
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-sky-700"
+            aria-label="GitHub profile"
+            title="GitHub"
+          >
+            <Github className="w-4 h-4" />
+            <span className="hidden sm:inline">GitHub</span>
+          </Link>
         </div>
       </div>
       <div className="shrink-0">
