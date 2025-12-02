@@ -10,6 +10,7 @@ import Strengths from "./components/Strengths";
 import Skills from "./components/Skills";
 import Certification from "./components/Certification";
 import Passions from "./components/Passions";
+import CaptureButton from "./components/CaptureButton";
 
 export default function Home() {
   // Ensure assets work on GitHub Pages when the site is served under a basePath (e.g., /repo-name)
@@ -163,8 +164,16 @@ export default function Home() {
 
   return (
     <main className="bg-[#0f172a] min-h-screen py-2 sm:py-4 md:py-6 lg:py-10">
+      {/* Capture Button - Outside resume container */}
+      <div className="mx-auto w-full md:w-[210mm] px-3 sm:px-4 md:px-4 mb-4">
+        <div className="flex justify-end">
+          <CaptureButton resumeElementId="resume-container" />
+        </div>
+      </div>
+
+      {/* Resume Container */}
       <div className="mx-auto w-full md:w-[210mm] md:max-h-[297mm] px-3 sm:px-4 md:px-4">
-        <div className="bg-white rounded-lg shadow-lg p-3 sm:p-4 md:p-4">
+        <div id="resume-container" className="bg-white rounded-lg shadow-lg p-3 sm:p-4 md:p-4">
           <Header {...headerData} />
           <div className="mt-3 sm:mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-3 md:gap-4">
             {/* Left column */}
