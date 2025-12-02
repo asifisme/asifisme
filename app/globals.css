@@ -45,23 +45,26 @@
 
 /* Resume component styles */
 .section-title {
-  @apply text-[10px] sm:text-xs tracking-widest uppercase font-bold text-neutral-700 border-b pb-1;
+  @apply text-[11px] sm:text-[10px] md:text-[10px] tracking-wide uppercase font-extrabold text-neutral-800 border-b-2 border-neutral-300 pb-1 md:pb-0.5;
+  letter-spacing: 0.05em;
 }
 
 .job-title {
-  @apply font-semibold text-sm sm:text-base;
+  @apply font-bold text-sm sm:text-sm md:text-xs text-neutral-900;
+  letter-spacing: -0.01em;
 }
 
 .job-meta {
-  @apply text-[10px] sm:text-xs text-neutral-500;
+  @apply text-[11px] sm:text-[10px] md:text-[10px] text-neutral-600 font-medium;
 }
 
 .bullet-list {
-  @apply mt-2 list-disc pl-4 sm:pl-5 text-xs sm:text-[13px] text-neutral-800 space-y-1;
+  @apply mt-1.5 md:mt-1 list-disc pl-5 sm:pl-4 md:pl-4 text-xs sm:text-xs md:text-[11px] text-neutral-700 space-y-1 md:space-y-0.5;
+  line-height: 1.6;
 }
 
 .chip {
-  @apply inline-block rounded-full border border-neutral-200 px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-[13px];
+  @apply inline-block rounded-full border border-neutral-200 px-2.5 sm:px-2 md:px-2 py-1 sm:py-0.5 md:py-0.5 text-xs sm:text-xs md:text-[11px];
 }
 
 /* Print styles */
@@ -162,7 +165,27 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Improve heading typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* Better paragraph spacing */
+  p {
+    line-height: 1.6;
   }
 }

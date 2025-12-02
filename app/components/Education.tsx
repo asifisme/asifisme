@@ -15,7 +15,7 @@ export default function Education({ education }: EducationProps) {
   return (
     <div>
       <h2 className="section-title">Education</h2>
-      <div className="mt-4 space-y-4">
+      <div className="mt-2 md:mt-1.5 space-y-3 md:space-y-1.5">
         {education.map((item, index) => (
           <div key={index}>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-2">

@@ -15,12 +15,12 @@ export default function Home() {
   // Ensure assets work on GitHub Pages when the site is served under a basePath (e.g., /repo-name)
 
   const headerData = {
-      name: "Asif Faisal",
-      title: "Full-Stack & Financial Solutions Developer",
-      email: "f.asif.official@gmail.com",
-      linkedin: "https://www.linkedin.com/in/asifisme",
-      leetcode: "https://www.leetcode.com/asifisme",
-      github: "https://www.github.com/asifisme",
+    name: "Asif Faisal",
+    title: "Full-Stack & Financial Solutions Developer",
+    email: "f.asif.official@gmail.com",
+    linkedin: "https://www.linkedin.com/in/asifisme",
+    leetcode: "https://www.leetcode.com/asifisme",
+    github: "https://www.github.com/asifisme",
     // Use static import so Next.js handles the asset path both locally and on GitHub Pages
     avatarSrc: avatarPng,
   };
@@ -30,47 +30,47 @@ export default function Home() {
     "Passionate Full-Stack & Financial Solutions Developer skilled in Django, DRF, FastAPI, React, Next.js, PostgreSQL, and MySQL. I specialize in building secure, scalable, and data-driven fintech applications with strong backend architectures and modern frontend interfaces.";
 
   const experiences: ExperienceItemData[] = [
-      {
-          title: "Full Stack Software Developer",
-          company: "OrbitX",
-          period: "Jun 2025 – Present",
-          location: "London, UK (Remote)",
-          description: "Led full-stack development on scalable, high-impact projects using Django, Next.js, and microservices architecture.",
-          achievements: [
-              "Architected microservices ecosystem with Django REST Framework, enhancing scalability and reducing deployment time by 40%.",
-              "Engineered high-availability API Gateway integrating multiple services and third-party APIs for robust, seamless performance.",
-              "Implemented real-time data streaming via Django Channels and WebSockets, eliminating polling and boosting frontend responsiveness.",
-              "Optimized Next.js frontend with Redux Toolkit and Axios, streamlining state management and API interactions for superior UX."
-          ],
-        },
-      {
-        title: "Backend Developer",
-        company: "Zenorin",
-        period: "Jun – Dec 2025",
-        location: "Dhaka, Bangladesh",
-        description: "Drove backend innovation for e-commerce platform, focusing on secure APIs, infrastructure, and team collaboration.",
-        achievements: [
-            "Orchestrated end-to-end financial lifecycle modeling (orders, invoices, refunds, payouts) for comprehensive transaction transparency.",
-            "Engineered advanced product/inventory system with multi-level categorization and dynamic attributes to handle complex variants.",
-            "Deployed granular RBAC framework with custom permissions, fortifying module-level security and compliance.",
-            "Collaborated cross-functionally to integrate APIs seamlessly, elevating user experience and development velocity.",
-            "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
-        ],
-      },
-      {
-        title: "Junior Software Developer",
-        company: "Exoveon",
-        period: "Jan 2025 – Present",
-        location: "Dhaka, Bangladesh",
-        description: "Contributed to full-stack e-commerce solutions, specializing in Django-based accounting and financial modules.",
-        achievements: [
-            "Developed comprehensive e-commerce accounting suite, including double-entry journaling for precise financial reconciliation.",
-            "Designed flexible Chart of Accounts (CoA) structure to enable advanced reporting and customizable financial categorization.",
-            "Built jurisdiction-aware taxation engine supporting compound rates, ensuring global compliance and accuracy.",
-            "Created immutable customer wallet system with audit trails, enhancing fund security and traceability in high-volume transactions."
-        ],
-      },
-    ];
+    {
+      title: "Full Stack Software Developer",
+      company: "OrbitX",
+      period: "Jun 2025 – Present",
+      location: "London, UK (Remote)",
+      description: "Led full-stack development on scalable, high-impact projects using Django, Next.js, and microservices architecture.",
+      achievements: [
+        "Architected microservices ecosystem with Django REST Framework, enhancing scalability and reducing deployment time by 40%.",
+        "Engineered high-availability API Gateway integrating multiple services and third-party APIs for robust, seamless performance.",
+        "Implemented real-time data streaming via Django Channels and WebSockets, eliminating polling and boosting frontend responsiveness.",
+        "Optimized Next.js frontend with Redux Toolkit and Axios, streamlining state management and API interactions for superior UX."
+      ],
+    },
+    {
+      title: "Backend Developer",
+      company: "Zenorin",
+      period: "Jun – Dec 2025",
+      location: "Dhaka, Bangladesh",
+      description: "Drove backend innovation for e-commerce platform, focusing on secure APIs, infrastructure, and team collaboration.",
+      achievements: [
+        "Orchestrated end-to-end financial lifecycle modeling (orders, invoices, refunds, payouts) for comprehensive transaction transparency.",
+        "Engineered advanced product/inventory system with multi-level categorization and dynamic attributes to handle complex variants.",
+        "Deployed granular RBAC framework with custom permissions, fortifying module-level security and compliance.",
+        "Collaborated cross-functionally to integrate APIs seamlessly, elevating user experience and development velocity.",
+        "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
+      ],
+    },
+    {
+      title: "Junior Software Developer",
+      company: "Exoveon",
+      period: "Jan 2025 – Present",
+      location: "Dhaka, Bangladesh",
+      description: "Contributed to full-stack e-commerce solutions, specializing in Django-based accounting and financial modules.",
+      achievements: [
+        "Developed comprehensive e-commerce accounting suite, including double-entry journaling for precise financial reconciliation.",
+        "Designed flexible Chart of Accounts (CoA) structure to enable advanced reporting and customizable financial categorization.",
+        "Built jurisdiction-aware taxation engine supporting compound rates, ensuring global compliance and accuracy.",
+        "Created immutable customer wallet system with audit trails, enhancing fund security and traceability in high-volume transactions."
+      ],
+    },
+  ];
 
   // Education data
   const education: EducationItemData[] = [
@@ -118,7 +118,7 @@ export default function Home() {
     "JavaScript",
     "TypeScript",
     "React",
-    "Next.js", 
+    "Next.js",
     "Server-side logic",
     "Database Integration",
     "API Building",
@@ -130,7 +130,7 @@ export default function Home() {
   const certifications = [
     {
       title: "Full Stack Web Development with Python, Django & React",
-      docs_link: "https://ostad.app/share/certificate/c29360-asif-faisal", 
+      docs_link: "https://ostad.app/share/certificate/c29360-asif-faisal",
       description:
         "Course provided by Ostad.",
     },
@@ -145,22 +145,30 @@ export default function Home() {
   const passions = [
     {
       title: "Data Analysis",
-      description: "Enjoy practicing coding skills with various programs.",
+      description: "Enjoy practicing coding skills with various programs and exploring data patterns.",
     },
     {
       title: "Finance and Technology",
       description: "Passionate about discussing the intersection of finance and technology.",
     },
+    {
+      title: "System Architecture",
+      description: "Interested in designing scalable and maintainable software architectures.",
+    },
+    {
+      title: "Continuous Learning",
+      description: "Committed to staying updated with latest technologies and industry best practices.",
+    },
   ];
 
   return (
-    <main className="bg-[#0f172a] min-h-screen py-4 sm:py-6 md:py-10">
-      <div className="mx-auto max-w-[900px] w-full px-4 sm:px-6 md:px-8">
-        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
+    <main className="bg-[#0f172a] min-h-screen py-2 sm:py-4 md:py-6 lg:py-10">
+      <div className="mx-auto w-full md:w-[210mm] md:max-h-[297mm] px-3 sm:px-4 md:px-4">
+        <div className="bg-white rounded-lg shadow-lg p-3 sm:p-4 md:p-4">
           <Header {...headerData} />
-          <div className="mt-4 sm:mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+          <div className="mt-3 sm:mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-3 md:gap-4">
             {/* Left column */}
-            <section className="md:col-span-2 space-y-6 sm:space-y-8">
+            <section className="md:col-span-2 space-y-4 md:space-y-3">
               <Summary text={summaryText} />
               <Experience experiences={experiences} />
               <Education education={education} />
@@ -168,7 +176,7 @@ export default function Home() {
             </section>
 
             {/* Right column (sidebar) */}
-            <aside className="md:col-span-1 space-y-6 sm:space-y-8">
+            <aside className="md:col-span-1 space-y-4 md:space-y-3">
               <Strengths strengths={strengths} />
               <Skills skills={skills} />
               <Certification certifications={certifications} />

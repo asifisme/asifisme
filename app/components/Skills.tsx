@@ -8,7 +8,7 @@ export default function Skills({ skills }: SkillsProps) {
   return (
     <div>
       <h2 className="section-title">Skills</h2>
-      <div className="mt-3 flex flex-wrap gap-2 text-[13px]">
+      <div className="mt-2 md:mt-1.5 flex flex-wrap gap-2 md:gap-1.5 text-sm md:text-xs">
         {skills.map((skill) => (
           <span key={skill} className="chip">
             {skill}

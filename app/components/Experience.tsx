@@ -24,7 +24,7 @@ function ExperienceItem({ item }: ExperienceItemProps) {
           {item.period} · {item.location}
         </span>
       </div>
-      <p className="mt-1 text-xs sm:text-[13px] text-neutral-700">{item.description}</p>
+      <p className="mt-0.5 text-xs sm:text-[13px] text-neutral-700">{item.description}</p>
       <ul className="bullet-list">
         {item.achievements.map((achievement, index) => (
           <li key={index}>{achievement}</li>
@@ -42,7 +42,7 @@ export default function Experience({ experiences }: ExperienceProps) {
   return (
     <div>
       <h2 className="section-title">Experience</h2>
-      <div className="mt-4 space-y-6">
+      <div className="mt-2 md:mt-1.5 space-y-4 md:space-y-3">
         {experiences.map((exp, index) => (
           <ExperienceItem key={index} item={exp} />
         ))}

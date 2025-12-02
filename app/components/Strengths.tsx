@@ -13,7 +13,7 @@ export default function Strengths({ strengths }: StrengthsProps) {
   return (
     <div>
       <h2 className="section-title">Strengths</h2>
-      <ul className="mt-3 space-y-3 text-sm">
+      <ul className="mt-2 md:mt-1.5 space-y-3 md:space-y-2 text-sm md:text-xs">
         {strengths.map((strength, index) => (
           <li key={index}>
             <strong className="font-semibold">{strength.title}</strong>

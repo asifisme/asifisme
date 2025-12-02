@@ -18,23 +18,23 @@ interface HeaderProps {
   avatarSrc: string | StaticImageData;
 }
 
-export default function Header({name, title, email, linkedin, leetcode, github, avatarSrc}: HeaderProps) {
-    const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      e.preventDefault();
-      const subject = encodeURIComponent("Interested in Working Together");
-      const body = encodeURIComponent(
-        `Hi ${name},\n\nI came across your resume and I'm interested in discussing potential collaboration or hiring opportunities.\n\nLooking forward to connecting with you.\n\nBest regards`
-      );
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
-      window.open(gmailUrl, '_blank');
-    };
+export default function Header({ name, title, email, linkedin, leetcode, github, avatarSrc }: HeaderProps) {
+  const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const subject = encodeURIComponent("Interested in Working Together");
+    const body = encodeURIComponent(
+      `Hi ${name},\n\nI came across your resume and I'm interested in discussing potential collaboration or hiring opportunities.\n\nLooking forward to connecting with you.\n\nBest regards`
+    );
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, '_blank');
+  };
 
   return (
-    <header className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4 sm:gap-6 border-b pb-4 sm:pb-6">
+    <header className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4 sm:gap-4 md:gap-3 border-b pb-3 sm:pb-3 md:pb-2">
       <div className="flex-1 text-center sm:text-left w-full">
-        <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">{name}</h1>
-        <p className="mt-1 text-sm sm:text-base text-sky-700 font-medium">{title}</p>
-        <div className="mt-2 sm:mt-3 flex flex-wrap justify-center sm:justify-start gap-x-3 sm:gap-x-5 gap-y-1 text-xs sm:text-sm text-neutral-600">
+        <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-neutral-900">{name}</h1>
+        <p className="mt-1 text-sm sm:text-base text-sky-700 font-semibold">{title}</p>
+        <div className="mt-2 sm:mt-2 md:mt-1.5 flex flex-wrap justify-center sm:justify-start gap-x-4 sm:gap-x-5 gap-y-1.5 sm:gap-y-1 text-xs sm:text-sm text-neutral-600">
           <a
             href={`mailto:${email}`}
             onClick={handleEmailClick}

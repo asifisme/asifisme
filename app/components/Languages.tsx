@@ -8,7 +8,7 @@ export default function Languages({ languages }: LanguagesProps) {
   return (
     <div>
       <h2 className="section-title">Languages</h2>
-      <p className="mt-2 text-sm">{languages}</p>
+      <p className="mt-1.5 md:mt-1 text-sm md:text-xs">{languages}</p>
     </div>
   );
 }
