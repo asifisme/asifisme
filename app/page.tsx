@@ -55,7 +55,7 @@ export default function Home() {
         "Engineered advanced product/inventory system with multi-level categorization and dynamic attributes to handle complex variants.",
         "Deployed granular RBAC framework with custom permissions, fortifying module-level security and compliance.",
         "Collaborated cross-functionally to integrate APIs seamlessly, elevating user experience and development velocity.",
-        "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
+        // "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
       ],
     },
     {
@@ -172,7 +172,7 @@ export default function Home() {
       </div>
 
       {/* Resume Container */}
-      <div className="mx-auto w-full md:w-[210mm] md:max-h-[297mm] px-3 sm:px-4 md:px-4">
+      <div className="mx-auto w-full md:w-[210mm] min-h-[297mm] px-3 sm:px-4 md:px-4">
         <div id="resume-container" className="bg-white rounded-lg shadow-lg p-3 sm:p-4 md:p-4">
           <Header {...headerData} />
           <div className="mt-3 sm:mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-3 md:gap-4">
@@ -191,6 +191,11 @@ export default function Home() {
               <Certification certifications={certifications} />
               <Passions passions={passions} />
             </aside>
+
+            {/* Full width section */}
+            <div className="md:col-span-3">
+              
+            </div>
           </div>
         </div>
       </div>
