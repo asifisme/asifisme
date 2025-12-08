@@ -6,8 +6,6 @@ import { Code, Mail } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
-
-
 interface HeaderProps {
   name: string;
   title: string;

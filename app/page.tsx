@@ -130,6 +130,12 @@ export default function Home() {
   // Certification data
   const certifications = [
     {
+      title: "Data Analysis with Python",
+      docs_link: "https://training.edge.gov.bd/certificate-validation?certificate_no=EDGE-DSTS-115-6709-00009",
+      description:
+        "Training conducted by Jashore University of Science & Technology under EDGE Project of Bangladesh Computer Council, ICT Division. (Nov 2024 – Jan 2025)",
+    },
+    {
       title: "Full Stack Web Development with Python, Django & React",
       docs_link: "https://ostad.app/share/certificate/c29360-asif-faisal",
       description:
@@ -149,16 +155,8 @@ export default function Home() {
       description: "Enjoy practicing coding skills with various programs and exploring data patterns.",
     },
     {
-      title: "Finance and Technology",
-      description: "Passionate about discussing the intersection of finance and technology.",
-    },
-    {
       title: "System Architecture",
       description: "Interested in designing scalable and maintainable software architectures.",
-    },
-    {
-      title: "Continuous Learning",
-      description: "Committed to staying updated with latest technologies and industry best practices.",
     },
   ];
 
