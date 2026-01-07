@@ -22,7 +22,6 @@ export default function Home() {
     linkedin: "https://www.linkedin.com/in/asifisme",
     leetcode: "https://www.leetcode.com/asifisme",
     github: "https://www.github.com/asifisme",
-    // Use static import so Next.js handles the asset path both locally and on GitHub Pages
     avatarSrc: avatarPng,
   };
 
@@ -34,7 +33,7 @@ export default function Home() {
     {
       title: "Full Stack Software Developer",
       company: "OrbitX",
-      period: "Jun 2025 – Present",
+      period: "Mar 2025 – Present",
       location: "London, UK (Remote)",
       description: "Led full-stack development on scalable, high-impact projects using Django, Next.js, and microservices architecture.",
       achievements: [
@@ -46,26 +45,26 @@ export default function Home() {
     },
     {
       title: "Backend Developer",
-      company: "Zenorin",
-      period: "Jun – Dec 2025",
+      company: "Uexio Ltd.",
+      period: "June 2024 – Feb 2025",
       location: "Dhaka, Bangladesh",
-      description: "Drove backend innovation for e-commerce platform, focusing on secure APIs, infrastructure, and team collaboration.",
+      description: "Drove backend innovation Financial for platform, focusing on secure APIs, infrastructure, and team collaboration.",
       achievements: [
-        "Orchestrated end-to-end financial lifecycle modeling (orders, invoices, refunds, payouts) for comprehensive transaction transparency.",
+        // "Orchestrated end-to-end financial lifecycle modeling (orders, invoices, refunds, payouts) for comprehensive transaction transparency.",
         "Engineered advanced product/inventory system with multi-level categorization and dynamic attributes to handle complex variants.",
         "Deployed granular RBAC framework with custom permissions, fortifying module-level security and compliance.",
         "Collaborated cross-functionally to integrate APIs seamlessly, elevating user experience and development velocity.",
-        // "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
+        "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
       ],
     },
     {
       title: "Junior Software Developer",
-      company: "Exoveon",
-      period: "Jan 2025 – Present",
+      company: "Adv. Composit Ltd.",
+      period: "Jan 2023 – May 2024",
       location: "Dhaka, Bangladesh",
-      description: "Contributed to full-stack e-commerce solutions, specializing in Django-based accounting and financial modules.",
+      description: "Contributed to full-stack HR solutions, specializing in Django-based accounting and financial modules.",
       achievements: [
-        "Developed comprehensive e-commerce accounting suite, including double-entry journaling for precise financial reconciliation.",
+        "Developed comprehensive HR accounting suite, including double-entry journaling for precise financial reconciliation.",
         "Designed flexible Chart of Accounts (CoA) structure to enable advanced reporting and customizable financial categorization.",
         "Built jurisdiction-aware taxation engine supporting compound rates, ensuring global compliance and accuracy.",
         "Created immutable customer wallet system with audit trails, enhancing fund security and traceability in high-volume transactions."
@@ -76,13 +75,13 @@ export default function Home() {
   // Education data
   const education: EducationItemData[] = [
     {
-      degree: "Bachelor's Degree in Finance",
+      degree: "Bachelor in Finance",
       period: "2020 – 2024",
       location: "Jashore, Bangladesh",
       institution: "Jashore University of Science and Technology",
     },
     {
-      degree: "Python Programming Course",
+      degree: "Data Analysis",
       period: "2024 – 2025",
       location: "Jashore, Bangladesh",
       institution: "Jashore University of Science and Technology",
