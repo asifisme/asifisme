@@ -19,12 +19,12 @@ interface HeaderProps {
 export default function Header({ name, title, email, linkedin, leetcode, github, avatarSrc }: HeaderProps) {
   const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent("Interested in Working Together");
-    const body = encodeURIComponent(
-      `Hi ${name},\n\nI came across your resume and I'm interested in discussing potential collaboration or hiring opportunities.\n\nLooking forward to connecting with you.\n\nBest regards`
-    );
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
-    window.open(gmailUrl, '_blank');
+    // const subject = encodeURIComponent("Interested in Working Together");
+    // const body = encodeURIComponent(
+    //   `Hi ${name},\n\nI came across your resume and I'm interested in discussing potential collaboration or hiring opportunities.\n\nLooking forward to connecting with you.\n\nBest regards`
+    // );
+    // const gmailUrl = "" // `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    // window.open(gmailUrl, '_blank');
   };
 
   return (
@@ -85,8 +85,8 @@ export default function Header({ name, title, email, linkedin, leetcode, github,
         <Image
           src={avatarSrc}
           alt={`${name} headshot`}
-          width={80}
-          height={80}
+          width={120}
+          height={120}
           className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover ring-2 ring-neutral-200"
         />
       </div>

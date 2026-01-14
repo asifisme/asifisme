@@ -1,7 +1,7 @@
-import { toPng, toJpeg } from 'html-to-image';
+import {toJpeg } from 'html-to-image';
 import { jsPDF } from 'jspdf';
 
-export async function captureResumeAsImage(elementId: string, format: 'png' | 'jpg' | 'pdf' = 'png', filename: string = 'asif'): Promise<void> {
+export async function captureResumeAsImage(elementId: string, filename: string = 'asif'): Promise<void> {
     try {
         const element = document.getElementById(elementId);
 
@@ -10,104 +10,88 @@ export async function captureResumeAsImage(elementId: string, format: 'png' | 'j
             throw new Error('Resume element not found');
         }
 
-        console.log(`Starting capture for ${format}...`);
+        console.log(`Starting capture for PDF...`);
 
-        // Configure options for high quality output
+        // Configure options for best quality while maintaining a reasonable size
         const options = {
-            quality: 0.98,
+            quality: 1, // User requested quality
             backgroundColor: '#ffffff',
-            pixelRatio: 3, // Higher resolution for crisp text
+            pixelRatio: 4, // High resolution for crisp text (4x is very clear)
             style: {
-                margin: '0', // Reset margins to avoid whitespace issues
+                margin: '0', // Reset margins to avoid browser defaults interfering
             }
         } as const;
 
-        if (format === 'pdf') {
-            // Render to high-res PNG, then embed with precise scaling and clickable links
-            const imgData = await toPng(element, options);
+        // Render to JPEG for smaller file size compared to PNG
+        const imgData = await toJpeg(element, options);
 
-            const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+        const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
 
-            // Page size (mm)
-            const pageW = pdf.internal.pageSize.getWidth();
-            const pageH = pdf.internal.pageSize.getHeight();
+        // Page size (mm)
+        const pageW = pdf.internal.pageSize.getWidth();
+        const pageH = pdf.internal.pageSize.getHeight();
 
-            // Use full element dimensions in CSS pixels
-            const elemWpx = element.scrollWidth || element.clientWidth;
-            const elemHpx = element.scrollHeight || element.clientHeight;
+        // Use full element dimensions in CSS pixels
+        const elemWpx = element.scrollWidth || element.clientWidth;
+        const elemHpx = element.scrollHeight || element.clientHeight;
 
-            // Compute uniform scale to fit inside the page (no margins for maximum area)
-            const scale = Math.min(pageW / elemWpx, pageH / elemHpx);
-            const renderWmm = elemWpx * scale;
-            const renderHmm = elemHpx * scale;
-            const offsetXmm = (pageW - renderWmm) / 2; // center horizontally
-            const offsetYmm = (pageH - renderHmm) / 2; // center vertically
+        // Compute scale to match page width exactly means "Follow HTML design"
+        // HTML is w-[210mm] which matches PDF used width.
+        const scale = pageW / elemWpx;
 
-            // Premium white background
-            pdf.setFillColor(255, 255, 255);
-            pdf.rect(0, 0, pageW, pageH, 'F');
+        const renderWmm = elemWpx * scale;
+        const renderHmm = elemHpx * scale;
 
-            // Add the image
-            pdf.addImage(imgData, 'PNG', offsetXmm, offsetYmm, renderWmm, renderHmm);
+        // Position at top-left (0,0) so HTML controls all internal spacing/margins
+        const offsetXmm = 0;
+        const offsetYmm = 0;
 
-            // Add clickable link annotations for ALL links (email, LinkedIn, GitHub, LeetCode, certifications)
-            const anchorNodes = Array.from(element.querySelectorAll('a')) as HTMLAnchorElement[];
-            const rootRect = element.getBoundingClientRect();
-                        
-            // Filter to include all valid links (http/https/mailto)
-            const isValidLink = (href: string) => {
-                if (!href || href === '#' || href === 'javascript:void(0)') return false;
-                return /^(https?:\/\/|mailto:)/i.test(href);
-            };
+        // Premium white background for the whole page
+        pdf.setFillColor(255, 255, 255);
+        pdf.rect(0, 0, pageW, pageH, 'F');
 
-            anchorNodes
-                .filter(a => !!a.href && isValidLink(a.href))
-                .forEach(a => {
-                    const r = a.getBoundingClientRect();
-                    const xPx = r.left - rootRect.left;
-                    const yPx = r.top - rootRect.top;
-                    const wPx = r.width;
-                    const hPx = r.height;
+        // Add the image (JPEG format)
+        pdf.addImage(imgData, 'JPEG', offsetXmm, offsetYmm, renderWmm, renderHmm);
 
-                    const xMm = offsetXmm + xPx * scale;
-                    const yMm = offsetYmm + yPx * scale;
-                    const wMm = Math.max(0.1, wPx * scale);
-                    const hMm = Math.max(0.1, hPx * scale);
+        // Add clickable link annotations for ALL links (email, LinkedIn, GitHub, LeetCode, certifications)
+        const anchorNodes = Array.from(element.querySelectorAll('a')) as HTMLAnchorElement[];
+        const rootRect = element.getBoundingClientRect();
 
+        // Filter to include all valid links (http/https/mailto)
+        const isValidLink = (href: string) => {
+            if (!href || href === '#' || href === 'javascript:void(0)') return false;
+            return /^(https?:\/\/|mailto:)/i.test(href);
+        };
+
+        anchorNodes
+            .filter(a => !!a.href && isValidLink(a.href))
+            .forEach(a => {
+                const r = a.getBoundingClientRect();
+                const xPx = r.left - rootRect.left;
+                const yPx = r.top - rootRect.top;
+                const wPx = r.width;
+                const hPx = r.height;
+
+                const xMm = offsetXmm + xPx * scale;
+                const yMm = offsetYmm + yPx * scale;
+                const wMm = Math.max(0.1, wPx * scale);
+                const hMm = Math.max(0.1, hPx * scale);
+
+                try {
+                    // Create a link annotation over the area
+                    pdf.link(xMm, yMm, wMm, hMm, { url: a.href });
+                } catch {
+                    // Fallback: place an invisible textWithLink nearby if needed
                     try {
-                        // Create a link annotation over the area
-                        pdf.link(xMm, yMm, wMm, hMm, { url: a.href });
-                    } catch {
-                        // Fallback: place an invisible textWithLink nearby if needed
-                        try {
-                            pdf.textWithLink(' ', xMm, yMm + 1, { url: a.href });
-                        } catch {/* noop */}
-                    }
-                });
+                        pdf.textWithLink(' ', xMm, yMm + 1, { url: a.href });
+                    } catch {/* noop */ }
+                }
+            });
 
-            // Optional metadata
-            pdf.setProperties({ title: filename, subject: 'Resume PDF', author: 'Asif Faisal' });
+        // Optional metadata
+        pdf.setProperties({ title: filename, subject: 'Resume PDF', author: 'Asif Faisal' });
 
-            pdf.save(`${filename}.pdf`);
-            return;
-        }
-
-        let dataUrl: string;
-
-        if (format === 'png') {
-            dataUrl = await toPng(element, options);
-        } else {
-            dataUrl = await toJpeg(element, { ...options, quality: 0.98 });
-        }
-
-
-        // Create download link
-        const link = document.createElement('a');
-        link.href = dataUrl;
-        link.download = `${filename}.${format}`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        pdf.save(`${filename}.pdf`);
 
     } catch (error) {
         console.error('Error capturing resume:', error);

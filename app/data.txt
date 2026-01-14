@@ -45,16 +45,16 @@ export default function Home() {
     },
     {
       title: "Backend Developer",
-      company: "Miicon Solutions.",
+      company: "Uexio Ltd.",
       period: "June 2024 – Feb 2025",
-      location: "Jashore, Bangladesh",
+      location: "Dhaka, Bangladesh",
       description: "Drove backend innovation for financial platform, focusing on secure APIs, cloud infrastructure, and team collaboration.",
       achievements: [
         "Engineered advanced product/inventory system with multi-level categorization and dynamic attributes to handle complex variants.",
         "Orchestrated containerized deployments using Docker and Docker Compose, streamlining development and production environments.",
-        "Utilized basic cloud computing services and automated backup strategies to ensure system uptime and data integrity.",
+        "Configured cloud monitoring with AWS CloudWatch and automated backup strategies, ensuring 99.9% uptime and data integrity.",
         "Deployed granular RBAC framework with custom permissions, fortifying module-level security and compliance.",
-        // "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
+        "Mentored junior developers, accelerating team skills and output through targeted code reviews and knowledge sharing."
       ],
     },
     {
@@ -67,7 +67,7 @@ export default function Home() {
         "Developed comprehensive HR accounting suite, including double-entry journaling for precise financial reconciliation.",
         "Designed flexible Chart of Accounts (CoA) structure to enable advanced reporting and customizable financial categorization.",
         "Built jurisdiction-aware taxation engine supporting compound rates, ensuring global compliance and accuracy.",
-        "Created immutable customer wallet system with audit trails, enhancing fund security and traceability in high-volume transactions.",
+        "Created immutable customer wallet system with audit trails, enhancing fund security and traceability in high-volume transactions."
       ],
     },
   ];
@@ -75,8 +75,14 @@ export default function Home() {
   // Education data
   const education: EducationItemData[] = [
     {
-      degree: "Graduated",
+      degree: "Bachelor of Business Administration",
       period: "2020 – 2024",
+      location: "Jashore, Bangladesh",
+      institution: "Jashore University of Science and Technology",
+    },
+    {
+      degree: "Data Analysis",
+      period: "2024 – 2025",
       location: "Jashore, Bangladesh",
       institution: "Jashore University of Science and Technology",
     },

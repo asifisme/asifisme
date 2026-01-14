@@ -9,15 +9,13 @@ interface CaptureButtonProps {
 
 export default function CaptureButton({ resumeElementId }: CaptureButtonProps) {
     const [isCapturing, setIsCapturing] = useState(false);
-    const [showMenu, setShowMenu] = useState(false);
 
-    const handleCapture = async (format: 'png' | 'jpg' | 'pdf') => {
+    const handleCapture = async () => {
         setIsCapturing(true);
-        setShowMenu(false);
 
         try {
-            console.log('Attempting to capture resume as', format);
-            await captureResumeAsImage(resumeElementId, format, 'asif');
+            console.log('Attempting to capture resume as PDF');
+            await captureResumeAsImage(resumeElementId, 'asif');
             console.log('Capture successful');
         } catch (error) {
             console.error('Capture failed:', error);
@@ -29,40 +27,14 @@ export default function CaptureButton({ resumeElementId }: CaptureButtonProps) {
     };
 
     return (
-        <div className="relative">
-            <button
-                onClick={() => setShowMenu(!showMenu)}
-                disabled={isCapturing}
-                className="flex items-center gap-2 px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded-lg font-medium text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
-                aria-label="Download resume"
-            >
-                <Download className="w-4 h-4" />
-                {isCapturing ? 'Capturing...' : 'Download Resume'}
-            </button>
-
-            {showMenu && !isCapturing && (
-                <div className="absolute top-full mt-2 right-0 bg-white rounded-lg shadow-xl border border-neutral-200 py-2 min-w-[160px] z-50">
-                    <button
-                        onClick={() => handleCapture('pdf')}
-                        className="w-full px-4 py-2 text-left text-sm text-neutral-700 hover:bg-neutral-100 transition-colors font-medium"
-                    >
-                        Download as PDF
-                    </button>
-                    <div className="h-px bg-neutral-100 my-1"></div>
-                    <button
-                        onClick={() => handleCapture('png')}
-                        className="w-full px-4 py-2 text-left text-sm text-neutral-700 hover:bg-neutral-100 transition-colors"
-                    >
-                        Download as PNG
-                    </button>
-                    <button
-                        onClick={() => handleCapture('jpg')}
-                        className="w-full px-4 py-2 text-left text-sm text-neutral-700 hover:bg-neutral-100 transition-colors"
-                    >
-                        Download as JPG
-                    </button>
-                </div>
-            )}
-        </div>
+        <button
+            onClick={handleCapture}
+            disabled={isCapturing}
+            className="flex items-center gap-2 px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded-lg font-medium text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
+            aria-label="Download resume"
+        >
+            <Download className="w-4 h-4" />
+            {isCapturing ? 'Generating PDF...' : 'Download Resume'}
+        </button>
     );
 }
