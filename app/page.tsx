@@ -31,9 +31,9 @@ export default function Home() {
   const experiences: ExperienceItemData[] = [
     {
       title: "Full Stack Software Developer",
-      company: "OrbitX",
-      period: "Mar 2025 – Present",
-      location: "London, UK (Remote)",
+      company: "Exoveon Ltd.",
+      period: "Sep 2025 – Present",
+      location: "Dhaka, Bangladesh",
       description: "Led full-stack development on scalable, high-impact projects using Django, Next.js, and microservices architecture.",
       achievements: [
         "Architected microservices ecosystem with Django REST Framework, enhancing scalability and reducing deployment time by 40%.",
@@ -45,9 +45,9 @@ export default function Home() {
     },
     {
       title: "Backend Developer",
-      company: "Miicon Solutions.",
-      period: "June 2024 – Feb 2025",
-      location: "Jashore, Bangladesh",
+      company: "OrbitX Ltd.",
+      period: "Nov 2024 – Jun 2025",
+      location: "London, UK (Remote)",
       description: "Drove backend innovation for financial platform, focusing on secure APIs, cloud infrastructure, and team collaboration.",
       achievements: [
         "Engineered advanced product/inventory system with multi-level categorization and dynamic attributes to handle complex variants.",
@@ -59,9 +59,9 @@ export default function Home() {
     },
     {
       title: "Junior Software Developer",
-      company: "Adv. Composit Ltd.",
-      period: "Jan 2023 – May 2024",
-      location: "Dhaka, Bangladesh",
+      company: "Miicon Solutions.",
+      period: "Jan 2024 – Oct 2024",
+      location: "Jashore, Bangladesh",
       description: "Contributed to full-stack HR solutions, specializing in Django-based accounting and financial modules.",
       achievements: [
         "Developed comprehensive HR accounting suite, including double-entry journaling for precise financial reconciliation.",
@@ -114,10 +114,11 @@ export default function Home() {
     "React",
     "Next.js",
     "Server-side logic",
-    "Database Integration",
+    "Database Design",
     "API Building",
-    "Testing Tools",
     "Microservice Architecture",
+    "Testing Tools",
+    "Cloud Deployment",
   ];
 
   // Certification data
