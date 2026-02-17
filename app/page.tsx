@@ -37,8 +37,8 @@ export default function Home() {
       description: "Led full-stack development on scalable, high-impact projects using Django, Next.js, and microservices architecture.",
       achievements: [
         "Architected microservices ecosystem with Django REST Framework, enhancing scalability and reducing deployment time by 40%.",
-        "Implemented CI/CD pipelines using GitHub Actions and Docker, automating testing and deployment processes with zero-downtime releases.",
-        "Deployed cloud infrastructure on AWS, GCP with auto-scaling, reducing operational costs by 35%.",
+        "Implemented CI/CD pipelines using GitHub Actions and Docker, deployment processes with zero-downtime releases.",
+        "Deployed cloud infrastructure on AWS, GCP.",
         "Engineered high-availability API Gateway integrating multiple services and third-party APIs for robust, seamless performance.",
         "Implemented real-time data streaming via Django Channels and WebSockets, eliminating polling and boosting frontend responsiveness."
       ],
