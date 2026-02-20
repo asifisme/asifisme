@@ -14,9 +14,9 @@ export async function captureResumeAsImage(elementId: string, filename: string =
 
         // Configure options for best quality while maintaining a reasonable size
         const options = {
-            quality: 1, // User requested quality
+            quality: 0.92, // Optimized quality - imperceptible difference but smaller file
             backgroundColor: '#ffffff',
-            pixelRatio: 4, // High resolution for crisp text (4x is very clear)
+            pixelRatio: 2, // High resolution for crisp text (2x is sharp and efficient)
             style: {
                 margin: '0', // Reset margins to avoid browser defaults interfering
             }
