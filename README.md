@@ -30,17 +30,6 @@ I am proficient in modern backend frameworks like **Python (Django, FastAPI)** a
 
 ---
 
-## 📊 GitHub Technical Activity
-
-![GitHub Stats](./public/git.png)
-
-
-> [!TIP]
-> **To show "private" green contributions:**
-> Go to your GitHub profile, click the **Contribution Settings** dropdown (above the graph), and check **Private contributions**.
-
----
-
 ## 💼 Experience
 
 ### **Full Stack Software Developer | Exoveon Ltd.**
