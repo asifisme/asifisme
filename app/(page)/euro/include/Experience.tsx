@@ -13,13 +13,13 @@ export interface ExperienceItemData {
 function ExperienceItem({ item }: { item: ExperienceItemData }) {
     return (
         <article className="mb-2.5">
-            <h3 className="text-[12px] font-semibold text-gray-800 leading-tight">
+            <h3 className="text-[12px] leading-tight font-semibold text-[#111111]">
                 {item.title}
             </h3>
-            <h4 className="text-[11px] font-bold text-[#2B3B6F] uppercase leading-tight">
+            <h4 className="text-[11px] leading-tight font-bold text-[#1e3264] uppercase">
                 {item.company}
             </h4>
-            <div className="flex items-center gap-3 text-[9.5px] text-gray-500 mb-1 font-medium">
+            <div className="mb-1 flex items-center gap-3 text-[9.5px] font-medium text-[#444444]">
                 <div className="flex items-center gap-1">
                     <Calendar size={9} />
                     <span>{item.period}</span>
@@ -29,11 +29,11 @@ function ExperienceItem({ item }: { item: ExperienceItemData }) {
                     <span>{item.location}</span>
                 </div>
             </div>
-            <ul className="list-disc pl-3.5 space-y-0 marker:text-gray-400">
+            <ul className="list-disc space-y-0 pl-3.5 marker:text-[#555555]">
                 {item.achievements.map((achievement, idx) => (
                     <li
                         key={idx}
-                        className="text-[10px] leading-snug text-gray-700"
+                        className="text-[10px] leading-snug text-[#1a1a1a]"
                     >
                         {achievement}
                     </li>

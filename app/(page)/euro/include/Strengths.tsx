@@ -12,11 +12,11 @@ interface StrengthsProps {
 }
 
 const iconConfigs = [
-    { icon: Trophy, bg: "bg-amber-50", color: "text-amber-500" },
-    { icon: DollarSign, bg: "bg-emerald-50", color: "text-emerald-500" },
-    { icon: Zap, bg: "bg-blue-50", color: "text-blue-500" },
-    { icon: Users, bg: "bg-purple-50", color: "text-purple-500" },
-    { icon: Award, bg: "bg-rose-50", color: "text-rose-500" },
+    { icon: Trophy, bg: "bg-[#fef3c7]", color: "text-[#d97706]" },
+    { icon: DollarSign, bg: "bg-[#d1fae5]", color: "text-[#059669]" },
+    { icon: Zap, bg: "bg-[#dbeafe]", color: "text-[#2563eb]" },
+    { icon: Users, bg: "bg-[#ede9fe]", color: "text-[#7c3aed]" },
+    { icon: Award, bg: "bg-[#ffe4e6]", color: "text-[#e11d48]" },
 ];
 
 export default function Strengths({ strengths }: StrengthsProps) {
@@ -29,14 +29,19 @@ export default function Strengths({ strengths }: StrengthsProps) {
                     const Icon = config.icon;
                     return (
                         <div key={index} className="flex gap-2">
-                            <div className={`mt-0.5 flex-shrink-0 w-5 h-5 rounded flex items-center justify-center ${config.bg}`}>
-                                <Icon size={12} className={`stroke-[1.5] ${config.color}`} />
+                            <div
+                                className={`mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded ${config.bg}`}
+                            >
+                                <Icon
+                                    size={12}
+                                    className={`stroke-[1.5] ${config.color}`}
+                                />
                             </div>
                             <div>
-                                <h4 className="text-[10.5px] font-bold text-gray-800 leading-tight">
+                                <h4 className="text-[10.5px] leading-tight font-bold text-[#111111]">
                                     {item.title}
                                 </h4>
-                                <p className="text-[9.5px] leading-snug text-gray-600">
+                                <p className="text-[9.5px] leading-snug text-[#2a2a2a]">
                                     {item.description}
                                 </p>
                             </div>

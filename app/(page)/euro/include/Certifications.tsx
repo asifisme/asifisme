@@ -13,17 +13,19 @@ interface CertificationsProps {
     certifications: CertificationItemData[];
 }
 
-export default function Certifications({ certifications }: CertificationsProps) {
+export default function Certifications({
+    certifications,
+}: CertificationsProps) {
     return (
         <section className="mb-2">
             <SectionTitle>TRAINING / COURSES</SectionTitle>
             <div className="mt-1 space-y-1.5">
                 {certifications.map((cert, idx) => (
                     <div key={idx}>
-                        <h4 className="text-[10.5px] font-bold text-gray-800 leading-tight">
+                        <h4 className="text-[10.5px] leading-tight font-bold text-[#111111]">
                             {cert.title}
                         </h4>
-                        <p className="text-[9.5px] leading-snug text-gray-700">
+                        <p className="text-[9.5px] leading-snug text-[#1a1a1a]">
                             {cert.description || cert.issuer}
                         </p>
                     </div>

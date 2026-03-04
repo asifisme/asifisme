@@ -34,14 +34,14 @@ export default function Header({
         : null;
 
     return (
-        <header className="bg-[#2B3B6F] text-white -mx-[12mm] -mt-[10mm] px-[12mm] pt-5 pb-4 mb-3">
-            <h1 className="text-[28px] font-bold tracking-wider uppercase mb-0.5 leading-tight">
+        <header className="-mx-[12mm] -mt-[10mm] mb-3 bg-[#2B3B6F] px-[12mm] pt-5 pb-4 text-white">
+            <h1 className="mb-0.5 text-[28px] leading-tight font-bold tracking-wider uppercase">
                 {name}
             </h1>
-            <h2 className="text-[13px] font-semibold mb-3 leading-snug">
+            <h2 className="mb-3 text-[13px] leading-snug font-semibold">
                 {title || "Python AI Developer | TensorFlow & NLP Specialist"}
             </h2>
-            
+
             <div className="flex justify-between text-[11px] font-medium">
                 {/* Column 1 */}
                 <div className="space-y-0.5">
@@ -58,11 +58,11 @@ export default function Header({
                         </div>
                     )}
                 </div>
-                
+
                 {/* Column 2 */}
                 <div className="space-y-0.5">
                     <div className="flex items-center gap-1.5">
-                        <span className="font-bold text-[13px]">@</span>
+                        <span className="text-[13px] font-bold">@</span>
                         <a href={`mailto:${email}`} className="hover:underline">
                             {email}
                         </a>
@@ -74,19 +74,29 @@ export default function Header({
                         </div>
                     )}
                 </div>
-                
+
                 {/* Column 3 */}
                 <div className="space-y-0.5">
                     <div className="flex items-center gap-1.5">
                         <Linkedin size={11} />
-                        <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        <a
+                            href={linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline"
+                        >
                             {linkedinDisplay}
                         </a>
                     </div>
                     {githubDisplay && (
                         <div className="flex items-center gap-1.5">
                             <Globe size={11} />
-                            <a href={github} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                            <a
+                                href={github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
                                 {githubDisplay}
                             </a>
                         </div>

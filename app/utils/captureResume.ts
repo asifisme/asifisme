@@ -17,11 +17,13 @@ export async function captureResumeAsImage(
 
         // Configure options for best quality while maintaining a reasonable size
         const options = {
-            quality: 0.92, // Optimized quality - imperceptible difference but smaller file
+            quality: 0.85, // Good quality, keeps file size under 2MB
             backgroundColor: "#ffffff",
-            pixelRatio: 2, // High resolution for crisp text (2x is sharp and efficient)
+            pixelRatio: 2, // 2x for crisp text
+            cacheBust: true,
             style: {
-                margin: "0", // Reset margins to avoid browser defaults interfering
+                margin: "0",
+                overflow: "visible",
             },
         } as const;
 
@@ -42,12 +44,11 @@ export async function captureResumeAsImage(
         const elemWpx = element.scrollWidth || element.clientWidth;
         const elemHpx = element.scrollHeight || element.clientHeight;
 
-        // Compute scale to match page width exactly means "Follow HTML design"
-        // HTML is w-[210mm] which matches PDF used width.
+        // Compute scale to match page width exactly
         const scale = pageW / elemWpx;
 
-        const renderWmm = elemWpx * scale;
-        const renderHmm = elemHpx * scale;
+        const renderWmm = pageW;
+        const renderHmm = pageH;
 
         // Position at top-left (0,0) so HTML controls all internal spacing/margins
         const offsetXmm = 0;

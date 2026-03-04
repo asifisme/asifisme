@@ -19,7 +19,7 @@ export default function EuroResumePage() {
     const headerData = {
         name: "Asif Faisal",
         title: "Full-Stack Developer | System Architecture Specialist",
-        phone: "+880 1XXXXXXXXX", // Placeholder, you should update this
+        phone: "+880 1516-373037", // Placeholder, you should update this
         email: "f.asif.official@gmail.com",
         location: "Dhaka, Bangladesh",
         linkedin: "https://www.linkedin.com/in/asifisme",
@@ -168,7 +168,8 @@ export default function EuroResumePage() {
             title: "Data Analysis with Python",
             issuer: "EDGE Project, Bangladesh Computer Council, ICT Division (2024)",
             link: "https://training.edge.gov.bd/certificate-validation?certificate_no=EDGE-DSTS-115-6709-00009",
-            description: "Training conducted by Jashore University of Science & Technology under EDGE Project of Bangladesh Computer Council, ICT Division. (Nov 2024 – Jan 2025)",
+            description:
+                "Training conducted by Jashore University of Science & Technology under EDGE Project of Bangladesh Computer Council, ICT Division. (Nov 2024 – Jan 2025)",
         },
         {
             title: "Full Stack Web Development with Python, Django & React",
@@ -179,7 +180,8 @@ export default function EuroResumePage() {
         {
             title: "Developing Scalable Apps in Python",
             issuer: "Google Cloud Training",
-            description: "Google Cloud Training course focused on constructing scalable Python apps.",
+            description:
+                "Google Cloud Training course focused on constructing scalable Python apps.",
         },
     ];
 
@@ -224,19 +226,19 @@ export default function EuroResumePage() {
             </div>
 
             {/* A4 Resume Container */}
-            <div className="mx-auto w-full px-3 sm:px-4 md:w-[210mm] md:px-0">
+            <div className="mx-auto w-full px-2 sm:px-4 md:w-[210mm] md:px-0">
                 <div
                     id="euro-resume"
-                    className="h-[297mm] bg-white shadow-lg md:rounded-sm overflow-hidden text-black"
+                    className="h-[297mm] overflow-hidden bg-white text-black shadow-lg md:rounded-sm"
                     style={{
-                        padding: "10mm 12mm",
+                        padding: "10mm 6mm",
                     }}
                 >
                     <Header {...headerData} />
 
-                    <div className="grid grid-cols-[1fr_240px] gap-5 mt-1">
+                    <div className="mt-1 grid grid-cols-[1fr_240px] gap-5">
                         {/* Left Column (Main Content) */}
-                        <div className="pr-3 border-r border-gray-200">
+                        <div className="border-r border-gray-200 pr-3">
                             <Summary text={summaryText} />
                             <Experience experiences={experiences} />
                             <Education education={education} />
