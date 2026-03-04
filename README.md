@@ -50,16 +50,10 @@ To showcase my consistent contributions and technical engagement, here is a snap
 ### **🔥 Contribution & Streak Stats**
 ![GitHub Stats](./public/git.png)
 
-### **💻 Dynamic Activity Metrics**
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=asifisme&show_icons=true&theme=tokyonight" alt="Asif Faisal's GitHub Stats" height="150" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=asifisme&theme=tokyonight" alt="GitHub Streak" height="150" />
-</p>
 
 > [!TIP]
-> **To show your "private" green contributions:**
+> **To show "private" green contributions:**
 > Go to your GitHub profile, click the **Contribution Settings** dropdown (above the graph), and check **Private contributions**.
-
 ---
 
 ## 💼 Core Experience Highlights
