@@ -36,10 +36,6 @@ I am proficient in modern backend frameworks like **Python (Django, FastAPI)** a
 *Sep 2025 – Present*
 Architected microservices, built CI/CD pipelines, and engineered API Gateways.
 
-### **Backend Developer | OrbitX Ltd.**
-*Nov 2024 – Jun 2025*
-Developed complex product inventory systems and orchestrated Docker deployments.
-
 ---
 
 ## 🎓 Education & Certifications
