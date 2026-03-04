@@ -1,4 +1,4 @@
-# 📄 Asif Faisal - 
+# 📄 Asif Faisal -
 
 ## 🌐 Live Resume
 
@@ -10,10 +10,10 @@
 
 I’m **Asif Faisal**, a passionate **Full-Stack & Financial Solutions Developer** skilled in:
 
-- 
--   **Backend:** Django, DRF, FastAPI
--   **Frontend:** React, Next.js
--   **Databases:** PostgreSQL, MySQL
+-
+- **Backend:** Django, DRF, FastAPI
+- **Frontend:** React, Next.js
+- **Databases:** PostgreSQL, MySQL
 
 I specialize in building secure, scalable, and data-driven fintech applications with strong backend architectures and modern frontend interfaces.
 
@@ -21,10 +21,9 @@ I’ve developed ERP systems, REST APIs, and financial dashboards integrated wit
 
 Combining technical precision with business understanding, I deliver end-to-end fintech solutions that are reliable, efficient, and production-ready.
 
---- 
+---
 
-## 📚 Education 
-
+## 📚 Education
 
 ---
 
@@ -32,13 +31,13 @@ Combining technical precision with business understanding, I deliver end-to-end 
 
 **Asif Faisal**
 
--   GitHub: [@asifisme](https://github.com/asifisme)
--   LinkedIn: [asifisme](https://www.linkedin.com/in/asifisme)
--   LeetCode: [asifisme](https://www.leetcode.com/asifisme)
--   Twitter: [@asifisme](https://twitter.com/asifismeX)
--   Facebook: [asifisme](https://www.facebook.com/asifisme)
--   Instagram: [@asifisme](https://www.instagram.com/asifisme)
--   Email: f.asif.official@gmail.com
--   Phone: +8801516373037
+- GitHub: [@asifisme](https://github.com/asifisme)
+- LinkedIn: [asifisme](https://www.linkedin.com/in/asifisme)
+- LeetCode: [asifisme](https://www.leetcode.com/asifisme)
+- Twitter: [@asifisme](https://twitter.com/asifismeX)
+- Facebook: [asifisme](https://www.facebook.com/asifisme)
+- Instagram: [@asifisme](https://www.instagram.com/asifisme)
+- Email: f.asif.official@gmail.com
+- Phone: +8801516373037
 
 ---

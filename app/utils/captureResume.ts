@@ -1,13 +1,16 @@
-import {toJpeg } from 'html-to-image';
-import { jsPDF } from 'jspdf';
+import { toJpeg } from "html-to-image";
+import { jsPDF } from "jspdf";
 
-export async function captureResumeAsImage(elementId: string, filename: string = 'asif'): Promise<void> {
+export async function captureResumeAsImage(
+    elementId: string,
+    filename: string = "asif"
+): Promise<void> {
     try {
         const element = document.getElementById(elementId);
 
         if (!element) {
-            console.error('Element not found:', elementId);
-            throw new Error('Resume element not found');
+            console.error("Element not found:", elementId);
+            throw new Error("Resume element not found");
         }
 
         console.log(`Starting capture for PDF...`);
@@ -15,17 +18,21 @@ export async function captureResumeAsImage(elementId: string, filename: string =
         // Configure options for best quality while maintaining a reasonable size
         const options = {
             quality: 0.92, // Optimized quality - imperceptible difference but smaller file
-            backgroundColor: '#ffffff',
+            backgroundColor: "#ffffff",
             pixelRatio: 2, // High resolution for crisp text (2x is sharp and efficient)
             style: {
-                margin: '0', // Reset margins to avoid browser defaults interfering
-            }
+                margin: "0", // Reset margins to avoid browser defaults interfering
+            },
         } as const;
 
         // Render to JPEG for smaller file size compared to PNG
         const imgData = await toJpeg(element, options);
 
-        const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+        const pdf = new jsPDF({
+            orientation: "portrait",
+            unit: "mm",
+            format: "a4",
+        });
 
         // Page size (mm)
         const pageW = pdf.internal.pageSize.getWidth();
@@ -48,24 +55,34 @@ export async function captureResumeAsImage(elementId: string, filename: string =
 
         // Premium white background for the whole page
         pdf.setFillColor(255, 255, 255);
-        pdf.rect(0, 0, pageW, pageH, 'F');
+        pdf.rect(0, 0, pageW, pageH, "F");
 
         // Add the image (JPEG format)
-        pdf.addImage(imgData, 'JPEG', offsetXmm, offsetYmm, renderWmm, renderHmm);
+        pdf.addImage(
+            imgData,
+            "JPEG",
+            offsetXmm,
+            offsetYmm,
+            renderWmm,
+            renderHmm
+        );
 
         // Add clickable link annotations for ALL links (email, LinkedIn, GitHub, LeetCode, certifications)
-        const anchorNodes = Array.from(element.querySelectorAll('a')) as HTMLAnchorElement[];
+        const anchorNodes = Array.from(
+            element.querySelectorAll("a")
+        ) as HTMLAnchorElement[];
         const rootRect = element.getBoundingClientRect();
 
         // Filter to include all valid links (http/https/mailto)
         const isValidLink = (href: string) => {
-            if (!href || href === '#' || href === 'javascript:void(0)') return false;
+            if (!href || href === "#" || href === "javascript:void(0)")
+                return false;
             return /^(https?:\/\/|mailto:)/i.test(href);
         };
 
         anchorNodes
-            .filter(a => !!a.href && isValidLink(a.href))
-            .forEach(a => {
+            .filter((a) => !!a.href && isValidLink(a.href))
+            .forEach((a) => {
                 const r = a.getBoundingClientRect();
                 const xPx = r.left - rootRect.left;
                 const yPx = r.top - rootRect.top;
@@ -83,18 +100,23 @@ export async function captureResumeAsImage(elementId: string, filename: string =
                 } catch {
                     // Fallback: place an invisible textWithLink nearby if needed
                     try {
-                        pdf.textWithLink(' ', xMm, yMm + 1, { url: a.href });
-                    } catch {/* noop */ }
+                        pdf.textWithLink(" ", xMm, yMm + 1, { url: a.href });
+                    } catch {
+                        /* noop */
+                    }
                 }
             });
 
         // Optional metadata
-        pdf.setProperties({ title: filename, subject: 'Resume PDF', author: 'Asif Faisal' });
+        pdf.setProperties({
+            title: filename,
+            subject: "Resume PDF",
+            author: "Asif Faisal",
+        });
 
         pdf.save(`${filename}.pdf`);
-
     } catch (error) {
-        console.error('Error capturing resume:', error);
+        console.error("Error capturing resume:", error);
         throw error;
     }
 }
