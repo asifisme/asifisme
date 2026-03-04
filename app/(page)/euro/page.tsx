@@ -81,7 +81,7 @@ export default function EuroResumePage() {
     const skillCategories: SkillCategory[] = [
         {
             label: "Languages",
-            items: ["Python", "JavaScript", "TypeScript", "SQL", "HTML/CSS"],
+            items: ["Python", "JavaScript", "TypeScript", "SQL", "C", "C#", "Bash"],
         },
         {
             label: "Frameworks",
@@ -89,6 +89,7 @@ export default function EuroResumePage() {
                 "Django",
                 "Django REST Framework",
                 "FastAPI",
+                "Express", 
                 "React",
                 "Next.js",
             ],
