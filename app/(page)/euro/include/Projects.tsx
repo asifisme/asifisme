@@ -17,10 +17,10 @@ export default function Projects({ projects }: ProjectsProps) {
             <div className="mt-1 space-y-1.5">
                 {projects.map((project, idx) => (
                     <div key={idx}>
-                        <h4 className="text-[10.5px] leading-tight font-bold text-[#111111]">
+                        <h4 className="text-[11px] leading-none font-bold text-[#111111]">
                             {project.title}
                         </h4>
-                        <p className="text-[9.5px] leading-snug text-[#1a1a1a]">
+                        <p className="mt-0.5 text-[10px] leading-tight text-[#1a1a1a]">
                             {project.description}
                         </p>
                     </div>

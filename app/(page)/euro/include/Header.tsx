@@ -34,7 +34,7 @@ export default function Header({
         : null;
 
     return (
-        <header className="-mx-[12mm] -mt-[10mm] mb-3 bg-[#2B3B6F] px-[12mm] pt-5 pb-4 text-white">
+        <header className="-mx-[12mm] -mt-[10mm] mb-3 bg-[#374151] px-[12mm] pt-5 pb-4 text-white">
             <h1 className="mb-0.5 text-[28px] leading-tight font-bold tracking-wider uppercase">
                 {name}
             </h1>

@@ -7,7 +7,7 @@ export interface EducationItemData {
     degree: string;
     period: string;
     location: string;
-    coursework?: string[];
+    activities?: string[];
 }
 
 interface EducationProps {
@@ -21,13 +21,13 @@ export default function Education({ education }: EducationProps) {
             <div className="mt-1 space-y-2">
                 {education.map((item, index) => (
                     <div key={index}>
-                        <h3 className="text-[12px] leading-tight font-semibold text-[#111111]">
+                        <h3 className="text-[12.5px] leading-tight font-semibold text-[#111111]">
                             {item.degree}
                         </h3>
-                        <h4 className="text-[11px] leading-tight font-bold text-[#1e3264] uppercase">
+                        <h4 className="text-[11.5px] leading-tight font-bold text-[#1e3264] uppercase">
                             {item.institution}
                         </h4>
-                        <div className="flex items-center gap-3 text-[9.5px] font-medium text-[#444444]">
+                        <div className="flex items-center gap-3 text-[10px] font-medium text-[#444444]">
                             <div className="flex items-center gap-1">
                                 <Calendar size={9} />
                                 <span>{item.period}</span>
@@ -37,12 +37,12 @@ export default function Education({ education }: EducationProps) {
                                 <span>{item.location}</span>
                             </div>
                         </div>
-                        {item.coursework && item.coursework.length > 0 && (
-                            <p className="mt-0.5 text-[10px] leading-snug text-[#1a1a1a]">
+                        {item.activities && item.activities.length > 0 && (
+                            <p className="mt-0.5 text-[10.5px] leading-tight text-[#1a1a1a]">
                                 <span className="font-semibold">
-                                    Relevant Coursework:
+                                    Volunteer Work & Activities:
                                 </span>{" "}
-                                {item.coursework.join(", ")}
+                                {item.activities.join(", ")}
                             </p>
                         )}
                     </div>

@@ -1,43 +1,96 @@
-# 📄 Asif Faisal -
+# Asif Faisal | Full-Stack Developer & System Architecture Specialist
 
-## 🌐 Live Resume
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Asif--Faisal-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/asifisme)
+[![GitHub](https://img.shields.io/badge/GitHub-asifisme-181717?style=for-the-badge&logo=github)](https://github.com/asifisme/euro)
+[![LeetCode](https://img.shields.io/badge/LeetCode-asifisme-FFA116?style=for-the-badge&logo=leetcode)](https://www.leetcode.com/asifisme)
 
-**Visit:** [https://asifisme.github.io/asifisme/](https://asifisme.github.io/asifisme/)
+## � Professional Profile
 
----
+I am **Asif Faisal**, a results-driven **Full-Stack Developer** and **System Architecture Specialist** based in Dhaka, Bangladesh. With over 2 years of professional experience, I specialize in building scalable web applications, robust financial platforms, and high-performance microservices.
 
-## 👨‍💻 About Me
-
-I’m **Asif Faisal**, a passionate **Full-Stack & Financial Solutions Developer** skilled in:
-
--
-- **Backend:** Django, DRF, FastAPI
-- **Frontend:** React, Next.js
-- **Databases:** PostgreSQL, MySQL
-
-I specialize in building secure, scalable, and data-driven fintech applications with strong backend architectures and modern frontend interfaces.
-
-I’ve developed ERP systems, REST APIs, and financial dashboards integrated with cloud platforms like **AWS** and **GCP**, ensuring top-tier performance and security. My expertise spans backend development, frontend optimization, and database design, with a deep focus on security best practices and financial data integrity.
-
-Combining technical precision with business understanding, I deliver end-to-end fintech solutions that are reliable, efficient, and production-ready.
+My expertise lies at the intersection of **Finance (Bachelor Degree)** and **Technology (Software Development)**, allowing me to build technically precise systems that solve complex business challenges. I am proficient in modern backend frameworks like **Python (Django, FastAPI)** and frontend technologies like **JavaScript/TypeScript (React, Next.js)**.
 
 ---
 
-## 📚 Education
+## 🛠️ Specialized Skill Set
+
+### **Backend Engineering**
+- **Languages:** Python, JavaScript, TypeScript, SQL, HTML/CSS
+- **Frameworks:** Django, Django REST Framework (DRF), FastAPI
+- **Real-time Systems:** WebSockets, Django Channels
+- **Natural Language Processing:** Spacy
+
+### **Frontend & UI/UX**
+- **Core:** React, Next.js, Tailwind CSS
+- **Design:** Modern UI/UX principles, Responsive Layouts
+
+### **Cloud & DevOps**
+- **Infrastructure:** AWS, Google Cloud Platform (GCP)
+- **Containerization:** Docker, Docker Compose
+- **Automation:** GitHub Actions (CI/CD)
+- **Monitoring & Reliability:** Microservices Architecture, API Gateways
+
+### **Database & State**
+- **Databases:** PostgreSQL, MySQL, Redis
+- **Modeling:** Database Design, Schema Optimization
 
 ---
 
-## 👤 Author
+## 📈 Key Career Achievements
 
-**Asif Faisal**
-
-- GitHub: [@asifisme](https://github.com/asifisme)
-- LinkedIn: [asifisme](https://www.linkedin.com/in/asifisme)
-- LeetCode: [asifisme](https://www.leetcode.com/asifisme)
-- Twitter: [@asifisme](https://twitter.com/asifismeX)
-- Facebook: [asifisme](https://www.facebook.com/asifisme)
-- Instagram: [@asifisme](https://www.instagram.com/asifisme)
-- Email: f.asif.official@gmail.com
-- Phone: +8801516373037
+- ⚡ **Real-time Solutions:** Implemented WebSocket-based data streaming, reducing client latency by **60%**.
+- �️ **DevOps Efficiency:** Built automated CI/CD pipelines achieving zero-downtime releases.
 
 ---
+
+## 📊 GitHub Technical Activity
+
+To showcase my consistent contributions and technical engagement, here is a snapshot of my activity:
+
+### **🔥 Contribution & Streak Stats**
+![GitHub Stats](./public/git.png)
+
+### **💻 Dynamic Activity Metrics**
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=asifisme&show_icons=true&theme=tokyonight" alt="Asif Faisal's GitHub Stats" height="150" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=asifisme&theme=tokyonight" alt="GitHub Streak" height="150" />
+</p>
+
+> [!TIP]
+> **To show your "private" green contributions:**
+> Go to your GitHub profile, click the **Contribution Settings** dropdown (above the graph), and check **Private contributions**.
+
+---
+
+## 💼 Core Experience Highlights
+
+### **Full Stack Software Developer | Exoveon Ltd.**
+*Sep 2025 – Present*
+Architected microservices, built CI/CD pipelines, and engineered API Gateways for high-availability production workloads.
+
+### **Backend Developer | OrbitX Ltd.**
+*Nov 2024 – Jun 2025*
+Developed complex product inventory systems, orchestrated Docker deployments, and implemented automated backup strategies.
+
+
+---
+
+## 🎓 Education & Certifications
+
+- **Bachelor Degree** | Jashore University of Science and Technology (2020 – 2024)
+  - *Focus: Finance, System Architecture*
+  - *Activities: Finance Club Member, Seminar Organizer, Community Service Volunteer*
+- **Data Analysis with Python** | EDGE Project, BCC, ICT Division
+- **Full Stack Web Development** | Python, Django & React (Ostad)
+- **Developing Scalable Apps in Python** | Google Cloud Training
+
+---
+
+## 📬 Contact Information
+
+- 📧 **Email:** [f.asif.official@gmail.com](mailto:f.asif.official@gmail.com)
+- 📍 **Location:** Dhaka, Bangladesh
+- 📞 **Phone:** +880 1516-373037
+
+---
+

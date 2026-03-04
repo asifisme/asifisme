@@ -9,7 +9,7 @@ export default function Languages({ languages }: LanguagesProps) {
     return (
         <section className="mb-2">
             <SectionTitle>LANGUAGES</SectionTitle>
-            <p className="text-[10.5px] leading-snug text-[#1a1a1a]">
+            <p className="text-[11px] leading-tight text-[#1a1a1a]">
                 {languages}
             </p>
         </section>

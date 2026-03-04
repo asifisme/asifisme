@@ -11,15 +11,19 @@ interface TechnicalSkillsProps {
 }
 
 export default function TechnicalSkills({ categories }: TechnicalSkillsProps) {
-    // Flatten all skills into a single comma-separated list to match the image
-    const allSkills = categories.flatMap((cat) => cat.items).join(", ");
+    const allSkills = categories.flatMap((cat) => cat.items);
 
     return (
         <section className="mb-2">
             <SectionTitle>SKILLS</SectionTitle>
-            <p className="text-[10px] leading-snug text-[#1a1a1a]">
-                {allSkills}
-            </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-0.5 text-[10.5px] leading-snug text-[#1a1a1a]">
+                {allSkills.map((skill, index) => (
+                    <span key={index} className="flex items-center">
+                        {skill}
+                        {index < allSkills.length - 1 ? "," : ""}
+                    </span>
+                ))}
+            </div>
         </section>
     );
 }

@@ -18,7 +18,7 @@ export default function EuroResumePage() {
     /* ─── Header ─── */
     const headerData = {
         name: "Asif Faisal",
-        title: "Full-Stack Developer | System Architecture Specialist",
+        title: "Full-Stack Developer | SAAS | ERP | Finance | Cloud | AI",
         phone: "+880 1516-373037", // Placeholder, you should update this
         email: "f.asif.official@gmail.com",
         location: "Dhaka, Bangladesh",
@@ -51,7 +51,7 @@ export default function EuroResumePage() {
         },
         {
             title: "Backend Developer",
-            company: "OrbitX Ltd.",
+            company: "OrbitX",
             period: "Nov 2024 – Jun 2025",
             location: "London, UK (Remote)",
             achievements: [
@@ -113,9 +113,8 @@ export default function EuroResumePage() {
                 "RESTful APIs",
                 "CI/CD Pipelines",
                 "Database Design",
-                "WebSockets",
-                "Test-Driven Development",
                 "System Design",
+                "WebSockets",
             ],
         },
     ];
@@ -148,16 +147,13 @@ export default function EuroResumePage() {
     const education: EducationItemData[] = [
         {
             institution: "Jashore University of Science and Technology",
-            degree: "Bachelor of Science",
+            degree: "Bachelor Degree",
             period: "2020 – 2024",
             location: "Jashore, Bangladesh",
-            coursework: [
-                "Data Structures & Algorithms",
-                "Database Systems",
-                "Operating Systems",
-                "Computer Networks",
-                "Software Engineering",
-                "Object Oriented Programming",
+            activities: [
+                "Microsoft Excel Workshop",
+                "Organized departmental seminars",
+                "Community Service Volunteer",
             ],
         },
     ];
@@ -204,12 +200,12 @@ export default function EuroResumePage() {
         {
             title: "HR Accounting Platform",
             description:
-                "Developed a comprehensive double-entry accounting system with Django, featuring automated reconciliation and multi-level Chart of Accounts architecture.",
+                "Developed a comprehensive double-entry accounting system with Django, featuring automated reconciliation",
         },
         {
             title: "Real-time API Gateway",
             description:
-                "Built a high-availability API gateway integrating 10+ internal and third-party services with WebSocket support, deployed on AWS with Docker.",
+                "API gateway integrating 10+ internal and third-party services with WebSocket support, deployed on AWS with Docker.",
         },
     ];
 
