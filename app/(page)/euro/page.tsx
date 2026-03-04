@@ -236,7 +236,7 @@ export default function EuroResumePage() {
                 >
                     <Header {...headerData} />
 
-                    <div className="mt-1 grid grid-cols-[1fr_240px] gap-5">
+                    <div className="mt-1 grid grid-cols-[1fr_240px] gap-2">
                         {/* Left Column (Main Content) */}
                         <div className="border-r border-gray-200 pr-3">
                             <Summary text={summaryText} />
@@ -246,7 +246,7 @@ export default function EuroResumePage() {
                         </div>
 
                         {/* Right Column (Sidebar) */}
-                        <div className="pl-2">
+                        <div className="pl-1">
                             <Projects projects={projects} />
                             <Strengths strengths={strengths} />
                             <TechnicalSkills categories={skillCategories} />
