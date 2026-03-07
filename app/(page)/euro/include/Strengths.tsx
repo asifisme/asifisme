@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-import { Trophy, DollarSign, Zap, Users, Award } from "lucide-react";
+import { Trophy,Tent, Zap, Users, Award } from "lucide-react";
 
 export interface StrengthItemData {
     title: string;
@@ -12,11 +12,11 @@ interface StrengthsProps {
 }
 
 const iconConfigs = [
-    { icon: Trophy, bg: "bg-[#fef3c7]", color: "text-[#d97706]" },
-    { icon: DollarSign, bg: "bg-[#d1fae5]", color: "text-[#059669]" },
-    { icon: Zap, bg: "bg-[#dbeafe]", color: "text-[#2563eb]" },
-    { icon: Users, bg: "bg-[#ede9fe]", color: "text-[#7c3aed]" },
-    { icon: Award, bg: "bg-[#ffe4e6]", color: "text-[#e11d48]" },
+    { icon: Trophy, bg: "bg-[#e5e7eb]", color: "text-[#1e293b]" },
+    { icon: Tent, bg: "bg-[#e5e7eb]", color: "text-[#1f2937]" },
+    { icon: Zap, bg: "bg-[#e5e7eb]", color: "text-[#1f2937]" },
+    { icon: Users, bg: "bg-[#e5e7eb]", color: "text-[#1f2937]" },
+    { icon: Award, bg: "bg-[#e5e7eb]", color: "text-[#1f2937]" },
 ];
 
 export default function Strengths({ strengths }: StrengthsProps) {
