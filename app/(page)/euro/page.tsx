@@ -176,10 +176,10 @@ export default function EuroResumePage() {
             description: "Course provided by Ostad.",
         },
         {
-            title: "Developing Scalable Apps in Python",
+            title: "Google Cloud Fundamentals: Core Infrastructure",
             issuer: "Google Cloud Training",
             description:
-                "Google Cloud Training course focused on constructing scalable Python apps.",
+                "Google Cloud Fundamentals: Core Infrastructure course on Coursera.",
         },
     ];
 
@@ -202,7 +202,7 @@ export default function EuroResumePage() {
         {
             title: "HR Accounting Platform",
             description:
-                "Built a financial accounting platform using Django that supports double-entry bookkeeping, automated reconciliation, hierarchical chart of accounts, and internal transaction processing.",
+                "Built a financial accounting platform using Django that supports double-entry bookkeeping, hierarchical chart of accounts.",
         },
         {
             title: "API Integration Gateway",
@@ -215,7 +215,7 @@ export default function EuroResumePage() {
     const languages = "English (Professional), Bengali (Native)";
 
     return (
-        <main className="min-h-screen bg-[#0f172a] py-2 sm:py-4 md:py-6 lg:py-10">
+        <main className="min-h-screen bg-[#94a3b8] py-2 sm:py-4 md:py-6 lg:py-10">
             {/* Download Button — outside the resume */}
             <div className="mx-auto mb-4 w-full px-3 sm:px-4 md:w-[210mm] md:px-0">
                 <div className="flex justify-end">
