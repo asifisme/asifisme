@@ -34,11 +34,11 @@ export default function Header({
         : null;
 
     return (
-        <header className="-mx-[12mm] -mt-[10mm] mb-3 bg-[#374151] px-[12mm] pt-5 pb-4 text-white">
-            <h1 className="mb-0.5 text-[28px] leading-tight font-bold tracking-wider uppercase">
+        <header className="-mx-[12mm] -mt-[10mm] mb-3 bg-[#27548A] px-[12mm] pt-5 pb- text-white">
+            <h1 className="mb-0.5 text-[25px] leading-tight font-bold tracking-wider uppercase">
                 {name}
             </h1>
-            <h2 className="mb-3 text-[13px] leading-snug font-semibold">
+            <h2 className="mb-1 text-[13px] leading-snug font-semibold">
                 {title || "Python AI Developer | TensorFlow & NLP Specialist"}
             </h2>
 

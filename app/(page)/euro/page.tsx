@@ -215,7 +215,7 @@ export default function EuroResumePage() {
     const languages = "English (Professional), Bengali (Native)";
 
     return (
-        <main className="min-h-screen bg-[#94a3b8] py-2 sm:py-4 md:py-6 lg:py-10">
+        <main className="min-h-screen bg-[#213555] py-2 sm:py-4 md:py-6 lg:py-10">
             {/* Download Button — outside the resume */}
             <div className="mx-auto mb-4 w-full px-3 sm:px-4 md:w-[210mm] md:px-0">
                 <div className="flex justify-end">
