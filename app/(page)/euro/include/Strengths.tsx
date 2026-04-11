@@ -38,10 +38,10 @@ export default function Strengths({ strengths }: StrengthsProps) {
                                 />
                             </div>
                             <div>
-                                <h4 className="text-[11px] leading-none font-bold text-[#111111]">
+                                <h4 className="text-[12px] leading-none font-bold text-[#111111]">
                                     {item.title}
                                 </h4>
-                                <p className="mt-0.5 text-[10px] leading-tight text-[#2a2a2a]">
+                                <p className="mt-0.5 text-[11px] leading-tight text-[#2a2a2a]">
                                     {item.description}
                                 </p>
                             </div>

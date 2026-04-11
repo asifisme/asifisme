@@ -38,11 +38,11 @@ export default function Header({
             <h1 className="mb-0.5 text-[28px] leading-tight font-bold tracking-wider uppercase">
                 {name}
             </h1>
-            <h2 className="mb-3 text-[13px] leading-snug font-semibold">
+            <h2 className="mb-3 text-[14px] leading-snug font-semibold">
                 {title || "Python AI Developer | TensorFlow & NLP Specialist"}
             </h2>
 
-            <div className="flex justify-between text-[11px] font-medium">
+            <div className="flex justify-between text-[12px] font-medium">
                 {/* Column 1 */}
                 <div className="space-y-0.5">
                     {phone && (
@@ -62,7 +62,7 @@ export default function Header({
                 {/* Column 2 */}
                 <div className="space-y-0.5">
                     <div className="flex items-center gap-1.5">
-                        <span className="text-[13px] font-bold">@</span>
+                        <span className="text-[14px] font-bold">@</span>
                         <a href={`mailto:${email}`} className="hover:underline">
                             {email}
                         </a>
