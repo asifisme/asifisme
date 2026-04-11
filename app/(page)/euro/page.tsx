@@ -11,7 +11,7 @@ import Certifications, {
 import Strengths, { StrengthItemData } from "./include/Strengths";
 import Passions, { PassionItemData } from "./include/Passions";
 import Projects, { ProjectItemData } from "./include/Projects";
-import Languages from "./include/Languages";
+// import Languages from "./include/Languages";
 import DownloadButton from "./include/DownloadButton";
 
 export default function EuroResumePage() {
@@ -43,7 +43,7 @@ export default function EuroResumePage() {
                 "Designed and developed backend services using Django REST Framework to support scalable SaaS applications, improving system modularity and simplifying feature deployment.",
                 "Built a multi-tenant SaaS architecture ensuring strict tenant-level data isolation and efficient resource utilization across 20+ client organizations.",
                 "Developed an API Gateway layer integrating 10+ internal and third-party services, improving system interoperability and simplifying service communication.",
-                "Implemented background job processing using Redis queues to handle asynchronous tasks such as notification delivery and data processing, improving system responsiveness.",
+                // "Implemented background job processing using Redis queues to handle asynchronous tasks such as notification delivery and data processing, improving system responsiveness.",
                 "Implemented CI/CD pipelines with GitHub Actions and Docker, enabling automated testing and deployment with zero-downtime releases across staging and production environments.",
                 "Deployed and managed production infrastructure on AWS and GCP, configuring compute instances, databases to ensure reliable and highly available workloads.",
                 "Integrated Llama-based LLM APIs to automate sentiment analysis on customer feedback, reducing manual review workload and improving response accuracy.",
@@ -60,7 +60,7 @@ export default function EuroResumePage() {
                 "Created an AI-driven feedback processing engine that categorizes user reviews and detects product pain points, automating approximately 40% of manual quality analysis tasks.",
                 "Implemented a role-based access control (RBAC) framework with fine-grained permissions to enforce module-level security across platform services.",
                 "Applied NLP pipelines for multilingual text processing and sentiment classification, improving automated analysis performance by 12%.",
-                "Refactored database schemas and backend logic, improving data processing efficiency and reducing server load during high-traffic operations.",
+                // "Refactored database schemas and backend logic, improving data processing efficiency and reducing server load during high-traffic operations.",
                 "Delivered multiple API-based integrations for client systems, improving automation workflows and increasing overall platform usability.",
             ],
         },
@@ -123,11 +123,11 @@ export default function EuroResumePage() {
 
     /* ─── Strengths (Key Achievements) ─── */
     const strengths: StrengthItemData[] = [
-        {
-            title: "Scalable Backend Systems",
-            description:
-                "Designed and developed backend services using Django REST Framework to support SaaS applications, improving modularity.",
-        },
+        // {
+        //     title: "Scalable Backend Systems",
+        //     description:
+        //         "Designed and developed backend services using Django REST Framework to support SaaS applications, improving modularity.",
+        // },
         {
             title: "Multi-Tenant SaaS Architecture",
             description:
@@ -199,11 +199,11 @@ export default function EuroResumePage() {
 
     /* ─── Projects ─── */
     const projects: ProjectItemData[] = [
-        {
-            title: "HR Accounting Platform",
-            description:
-                "Built a financial accounting platform using Django that supports double-entry bookkeeping, hierarchical chart of accounts.",
-        },
+        // {
+        //     title: "HR Accounting Platform",
+        //     description:
+        //         "Built a financial accounting platform using Django that supports double-entry bookkeeping, hierarchical chart of accounts.",
+        // },
         {
             title: "API Integration Gateway",
             description:
@@ -212,7 +212,7 @@ export default function EuroResumePage() {
     ];
 
     /* ─── Languages ─── */
-    const languages = "English (Professional), Bengali (Native)";
+    // const languages = "English (Professional), Bengali (Native)";
 
     return (
         <main className="min-h-screen bg-[#213555] py-2 sm:py-4 md:py-6 lg:py-10">
@@ -240,7 +240,7 @@ export default function EuroResumePage() {
                             <Summary text={summaryText} />
                             <Experience experiences={experiences} />
                             <Education education={education} />
-                            <Languages languages={languages} />
+                            {/* <Languages languages={languages} /> */}
                         </div>
 
                         {/* Right Column (Sidebar) */}
