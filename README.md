@@ -21,13 +21,6 @@ I am proficient in modern backend frameworks like **Python (Django, FastAPI)** a
 
 ---
 
-## 📈 Key Achievements
-
-- 🏛️ **Performance:** Optimized microservices, reducing deployment cycles by **40%**.
-- 💰 **Cloud:** Reduced server costs by **30%** through infrastructure optimization.
-- ⚡ **Real-time:** Reduced client latency by **60%** using WebSocket streaming.
-- 🛠️ **DevOps:** Built automated pipelines for zero-downtime releases.
-
 ---
 
 ## 💼 Experience
