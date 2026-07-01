@@ -21,8 +21,6 @@ I am proficient in modern backend frameworks like **Python (Django, FastAPI)** a
 
 ---
 
----
-
 ## 💼 Experience
 
 ### **Full Stack Software Developer | Exoveon Ltd.**
