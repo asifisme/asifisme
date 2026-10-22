@@ -82,5 +82,4 @@ Architected microservices, built CI/CD pipelines, and engineered API Gateways.
 ## 📬 Contact
 
 - 📧 **Email:** [f.asif.official@gmail.com](mailto:f.asif.official@gmail.com)
-- 📍 **Location:** Dhaka, Bangladesh
 - 📞 **Phone:** +880 1516-373037
