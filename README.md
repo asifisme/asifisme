@@ -53,9 +53,9 @@ Full Stack Software Developer who builds scalable web applications, financial pl
 
 ## 🎓 Education & Certifications
 
-- 🎓 **BSc**, Jashore University of Science & Technology (2020–2024)
+- 🎓 **BBA (Finance)**, Jashore University of Science & Technology (2020–2024)
 - 📜 **Data Analysis with Python**, EDGE Project, BCC (ICT Division)
-- 📜 **Full Stack Web Development** (Python, Django & React)
+- 📜 **Full Stack Web Development** (Python, Django, Go, Rust & React, Next.js )
 
 ---
 
