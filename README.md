@@ -12,7 +12,7 @@
 
 ## 👨‍💻 About Me
 
-Backend Developer who builds scalable web applications, financial platforms, and high-performance microservices. I care about clean, maintainable code and solving real engineering problems.
+Full Stack Software Developer who builds scalable web applications, financial platforms, and high-performance microservices. I care about clean, maintainable code and solving real engineering problems.
 
 - 🏗️ Designing microservices and API gateways
 - ⚙️ Building CI/CD pipelines and cloud deployments
