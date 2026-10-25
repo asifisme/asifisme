@@ -62,4 +62,16 @@ Backend Developer who builds scalable web applications, financial platforms, and
 
 ---
 
-<p align="center">📫 <b>Let's connect:</b> f.asif.official@gmail.com</p>
+## 📫 Contact
+
+<div align="center">
+
+**Click the copy icon on the right 👇**
+
+```text
+f.asif.official@gmail.com
+```
+
+<a href="mailto:f.asif.official@gmail.com"><img src="https://img.shields.io/badge/Send_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+
+</div>
