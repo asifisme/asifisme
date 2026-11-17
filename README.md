@@ -55,14 +55,6 @@ Full Stack Software Developer who builds scalable web applications, financial pl
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ---
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=asifisme&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asifisme&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
-</div>
-
 ---
 
 ## 🎓 Education & Certifications
