@@ -7,19 +7,19 @@
 
 <p>
   <a href="https://www.linkedin.com/in/asifisme">
-    <img src="https://img.shields.io/badge/LinkedIn-asifisme-0077B5?style=for-the-badge&logo=linkedin" />
+    <img src="https://img.shields.io/badge/LinkedIn-asifisme-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
   </a>
   <a href="https://github.com/asifisme">
-    <img src="https://img.shields.io/badge/GitHub-asifisme-181717?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/GitHub-asifisme-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
   <a href="https://www.leetcode.com/asifisme">
-    <img src="https://img.shields.io/badge/LeetCode-asifisme-FFA116?style=for-the-badge&logo=leetcode" />
+    <img src="https://img.shields.io/badge/LeetCode-asifisme-FFA116?style=for-the-badge&logo=leetcode" alt="LeetCode" />
   </a>
   <a href="mailto:f.asif.official@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="tel:+8801XXXXXXXXX">
-    <img src="https://img.shields.io/badge/Phone-Call_Me-25D366?style=for-the-badge&logo=googlevoice&logoColor=white" />
+  <a href="tel:+8801516373037">
+    <img src="https://img.shields.io/badge/Phone-Call_Me-25D366?style=for-the-badge&logo=googlevoice&logoColor=white" alt="Phone" />
   </a>
 </p>
 
@@ -124,50 +124,43 @@ Feel free to contact me for software development, collaborations, or professiona
 
 </div>
 
-<table border="0" align="center">
-  <tr>
-    <td width="55%" align="left" valign="middle">
+### 📧 Email Address
 
-**📧 Email Address**
+Click the copy icon to copy my email address:
 
 ```text
 f.asif.official@gmail.com
 ```
 
 <a href="mailto:f.asif.official@gmail.com">
-  <img src="https://img.shields.io/badge/Send_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <img src="https://img.shields.io/badge/Send_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Send Email" />
 </a>
 
-**📱 Phone Number**
+### 📱 Phone Number
+
+Click the copy icon to copy my phone number:
 
 ```text
-+88 01516 373037
++8801516373037
 ```
 
-<a href="tel:+88 01516 373037">
-  <img src="https://img.shields.io/badge/Call_Me-25D366?style=for-the-badge&logo=googlevoice&logoColor=white" />
+<a href="tel:+8801516373037">
+  <img src="https://img.shields.io/badge/Call_Me-25D366?style=for-the-badge&logo=googlevoice&logoColor=white" alt="Call Me" />
 </a>
 
-**🔗 LinkedIn**
+### 🔗 LinkedIn
 
-```text
-linkedin.com/in/asifisme
-```
+Connect with me on LinkedIn:
 
 <a href="https://www.linkedin.com/in/asifisme">
-  <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
 </a>
-
-    </td>
-    <td width="45%" align="right" valign="middle">
-      <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="Coding animation" width="320" />
-    </td>
-  </tr>
-</table>
 
 ---
 
 <div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="Coding animation" width="320" />
 
 **⭐ Thanks for visiting my profile!**
 
